@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Firstcaution</title>
+</head>
+<body>
+
+
+  <aside class="site-sidebar">
+    <div class="site-sidebar-inner-wrapper">
+      <a href="index.html" class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo">
+        <img src="assets/images/logos/logo.png" alt="logo">
+      </a>
+      <div class="sidebar-menu-wrapper">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link link-body-emphasis" aria-current="page">
+              <img src="assets/images/icons/home.svg" alt="">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="contracts.html" class="nav-link active">
+              <img src="assets/images/icons/my-contracts.svg" alt="">
+              <span>My Contracts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/my-deposit.svg" alt="">
+              <span>My Deposit</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/firstees.svg" alt="">
+              <span>Firstees</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/chatbot.svg" alt="">
+              <span>Chatbot</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav nav-pills flex-column">
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/settings.svg" alt="">
+              <span>Settings
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/logout.svg" alt="">
+              <span>Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="site-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="site-header-inner-wrapper">
+              <div class="page-title">
+                <h1>My Contracts</h1>
+              </div>
+              <div class="header-cta-wrapper">
+                <div class="header-search-field">
+                  <form class="" role="search">
+                    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                  </form>
+                </div>
+                <div class="header-settings">
+                  <img src="assets/images/icons/settings-1.svg" alt="">
+                </div>
+                <div class="header-notifications">
+                  <img src="assets/images/icons/notifications.svg" alt="">
+                </div>
+                <div class="header-profile">
+                  <img src="assets/images/icons/user-profile.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-main-section contracts-page">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="tabs-card-wrapper">
+                    <div class="card tabs-card">
+                        <ul class="nav nav-tabs" id="contract-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="false">Active</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab" aria-controls="pending" aria-selected="false">Pending</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="closed-tab" data-bs-toggle="tab" data-bs-target="#closed" type="button" role="tab" aria-controls="closed" aria-selected="false">Closed</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="contract-tab-content">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                <div class="contract-list">
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-4.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>John Duo</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-5.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Jerome Bell</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-pending">
+                                                <p>Pending</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-6.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Robert Fox</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-7.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Floyd Miles</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-8.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Devon Lane</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-9.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Jane Cooper</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-pending">
+                                                <p>Pending</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-4.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Wade Warren</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-closed">
+                                                <p>Closed</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="active" role="tabpanel" aria-labelledby="active-tab">
+                                <div class="contract-list">
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-4.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>John Duo</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-6.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Robert Fox</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-7.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Floyd Miles</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-8.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Devon Lane</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-active">
+                                                <p>Active</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                                <div class="contract-list">
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-5.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Jerome Bell</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-pending">
+                                                <p>Pending</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-9.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Jane Cooper</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-pending">
+                                                <p>Pending</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="closed" role="tabpanel" aria-labelledby="closed-tab">
+                                <div class="contract-list">
+                                    <div class="contract-list-item">
+                                        <div class="contract-user">
+                                            <div class="contract-user-image">
+                                                <img src="assets/images/icons/user-4.png" alt="">
+                                            </div>
+                                            <div class="contract-user-name">
+                                                <h4>Wade Warren</h4>
+                                            </div>
+                                        </div>
+                                        <div class="contract-issue-date-wrapper">
+                                            <div class="contract-issue-date-title">
+                                                <p>Issue Date:</p>
+                                            </div>
+                                            <div class="contract-issue-date">
+                                                <p>April 8,2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-status-wrapper">
+                                            <div class="contract-status-title">
+                                                <p>Status:</p>
+                                            </div>
+                                            <div class="contract-status contract-status-closed">
+                                                <p>Closed</p>
+                                            </div>
+                                        </div>
+                                        <div class="contract-view-detail-btn">
+                                            <a href="#" class="">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

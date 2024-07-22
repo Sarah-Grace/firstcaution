@@ -1,0 +1,9 @@
+@media screen and (max-width: 1380px) {
+    .btn-payment-method img {
+        width: 18px;
+    }
+    .btn-payment-method a {
+        font-size: 12px;
+        gap: 6px;
+    }
+}

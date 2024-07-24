@@ -7,3 +7,141 @@
         gap: 6px;
     }
 }
+@media only screen and (max-width: 1199px) {
+    #payment-method-accordion.accordion {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #payment-method-accordion.accordion .accordion-item {
+        flex: 0 0 48%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    aside {
+        height: calc(100vh - 80px);
+        top: 80px;
+    }
+    main {
+        margin-left: 0;
+    }
+    .mob-header-logo {
+        display: block;
+    }
+    .site-main-section {
+        margin-left: 50px;
+    }
+    .site-sidebar {
+        width: 50px;
+        padding: 0;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .site-sidebar:hover {
+        width: 250px;
+    }
+    .site-sidebar-logo {
+        display: none !important;
+    }
+    .site-sidebar .sidebar-menu-wrapper ul li a span{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .header-search-field,
+    .header-settings {
+        display: none;
+    }
+    .header-profile {
+        width: 52px;
+        height: 52px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .site-header, .site-main-section {
+        padding: 0;
+    }
+    .mob-header-logo img {
+        width: 90px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .header-notifications {
+        width: 40px;
+        height: 40px;
+    }
+    .header-profile {
+        display: none;
+    }
+    .mob-profile {
+        display: block;
+    }
+    .mob-profile img {
+        width: 28px;
+        height: 28px;
+    }
+    .card-content-title h3 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+    .granted-amount-text {
+        font-size: 28px;
+    }
+    #payment-method-accordion.accordion {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #payment-method-accordion.accordion .accordion-item {
+        flex: 0 0 100%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 676px) {
+    .current-contracts-block .padding-20,
+    .granted-amount-block .padding-20 {
+        padding: 20px 8px;
+        
+    }
+}
+@media only screen and (max-width: 575px) {
+    .current-contracts-block .padding-20,
+    .granted-amount-block .padding-20 {
+        padding: 20px 8px; 
+    }
+    .my-contracts-block {
+        padding: 20px 8px;
+    }
+    .contract-detail-card {
+        padding: 20px;
+    }
+    .contract-detail-list-item {
+        padding: 6px;
+    }
+    .contract-detail-list-item h3,
+    .notice-block h3 {
+        font-size: 12px;
+    }
+    .notice-block {
+        gap: 5px;
+        padding: 10px 5px;
+    }
+    .notice-block img {
+        width: 28px;
+    }
+    .notice-block h3 {
+        line-height: 15px;
+    }
+    .document-preview-block {
+        padding: 10px;
+    }
+    .document-preview-header h3 {
+        font-size: 12px;
+    }
+    .document-preview-img {
+        margin-top: 20px;
+    }
+    .btn-download {
+        padding: 16px;
+    }
+}

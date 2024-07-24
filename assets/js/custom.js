@@ -1,8 +1,3 @@
-/* global bootstrap: false */
-(() => {
-  'use strict'
-  const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  tooltipTriggerList.forEach(tooltipTriggerEl => {
-    new bootstrap.Tooltip(tooltipTriggerEl)
-  })
-})()
+// $(".sidebar-menu-wrapper ul li a").hover(function() {
+//   $(".sidebar-menu-wrapper").addClass("mob-active-sidebar");
+// });

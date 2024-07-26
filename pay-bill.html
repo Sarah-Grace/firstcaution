@@ -119,105 +119,127 @@
         </div>
       </div>
     </div>
-    <div class="site-main-section bill-detail-page">
+    <div class="site-main-section pay-bill-page">
       <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="card contract-detail-card">
                     <div class="back-btn-block">
                         <a href="contracts.html" class="back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
-                        <h2>Bill Detail</h2>
+                        <h2>Pay Bill</h2>
                     </div>
-                     <div class="row align-items-center">
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0 mt-4 mt-lg-0">
-                            <div class="custom-detail-block">
-                                <div class="custom-detail-list">
+                    <div class="pay-bill-form">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                              <div class="custom-detail-block">
+                                  <div class="detail-block-list-heading">
+                                      <h3>Detail Information:</h3>
+                                  </div>
+                                  <div class="custom-detail-list">
+                                      <div class="custom-detail-list-item">
+                                          <div class="contract-detail-item-title">
+                                              <h3 class="mb-0">Bill Amount</h3>
+                                          </div>
+                                          <div class="contract-detail-item-info">
+                                              <h3 class="mb-0">CHF 450.00</h3>
+                                          </div>
+                                      </div>
+                                      <div class="custom-detail-list-item">
+                                          <div class="contract-detail-item-title">
+                                              <h3 class="mb-0">Due Date:</h3>
+                                          </div>
+                                          <div class="contract-detail-item-info">
+                                              <h3 class="mb-0">April 8,2024</h3>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                              <div class="custom-detail-block custom-detail-block-radio-btns">
+                                  <div class="detail-block-list-heading">
+                                      <h3>Detail Information:</h3>
+                                  </div>
+                                  <div class="custom-detail-list custom-list-radio-btn ">
                                     <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Transaction ID:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">382468</h3>
-                                        </div>
+                                        <label class="form-check-label" for="radioBankTransfer">
+                                            <img src="assets/images/icons/bank.png" alt="">
+                                            <span>Bank Transfer</span>
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="pay-bill" id="radioBankTransfer">
                                     </div>
                                     <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Confirmation No:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">2BEF168</h3>
-                                        </div>
+                                      <label class="form-check-label" for="radioApplePay">
+                                          <img src="assets/images/icons/apple-pay.png" alt="">
+                                          <span>Apple Pay</span>
+                                      </label>
+                                      <input class="form-check-input" type="radio" name="pay-bill" id="radioApplePay">
                                     </div>
                                     <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Payment Date:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">May 18,2025</h3>
-                                        </div>
+                                        <label class="form-check-label" for="radioTwintPay">
+                                            <img src="assets/images/icons/twint.png" alt="">
+                                            <span>Twint Pay</span>
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="pay-bill" id="radioTwintPay">
                                     </div>
                                     <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Biller Name:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">Karl John</h3>
-                                        </div>
+                                      <label class="form-check-label" for="radioEbill">
+                                          <img src="assets/images/icons/e-bill.png" alt="">
+                                          <span>E-Bill</span>
+                                      </label>
+                                      <input class="form-check-input" type="radio" name="pay-bill" id="radioEbill">
                                     </div>
-                                    <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Amount Paid:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">CHF 450.00</h3>
-                                        </div>
-                                    </div>
-                                    <div class="custom-detail-list-item">
-                                        <div class="contract-detail-item-title">
-                                            <h3 class="mb-0">Payment Method:</h3>
-                                        </div>
-                                        <div class="contract-detail-item-info">
-                                            <h3 class="mb-0">Credit Card</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notice-block">
-                                    <img src="assets/images/icons/security-off.png" alt="">
-                                    <h3>Please keep in mind that these payments are only for Firstcaution.</h3>
-                                </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="or-with-lines">
+                                <p>or</p>
                             </div>
+                          </div>
+                          <div class="col-12 mt-3 mt-md-5">
+                            <div class="custom-btn-fill">
+                              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#requestModal">Need more time to Pay Your Bill?</a>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="document-preview-block">
-                                <div class="document-preview-header">
-                                   <h3>Document preview</h3> 
-                                   <div class="badge document-preview-size">100%</div>
-                                </div>
-                                <div class="document-preview-img">
-                                    <a href="javacript:void(0);">
-                                        <img src="assets/images/document-preview.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="document-preview-resize-btns">
-                                    <button>
-                                        <img src="assets/images/icons/zoom-in.svg" alt="">
-                                    </button>
-                                    <button>
-                                        <img src="assets/images/icons/zoom-out.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="btn-download-wrapper">
-                                <a href="javascript:void(0);" class="btn btn-download" download>Download PDF</a>
-                            </div>
-                        </div>
-                     </div>
+                      </form>
+                    </div>
                 </div>
             </div>
         </div>
       </div>
     </div>
   </main>
+
+
+    <!-- Request Modal -->
+    <div class="modal fade" id="requestModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="requestModalLabel">Request</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="request-modal-img">
+              <img src="assets/images/request-modal-img.png" alt="">
+            </div>
+            <h3>Select your option to request</h3>
+            <div class="custom-btn-fill mb-3">
+              <a href="javascript:void(0);" class="w-100">Payment Plan</a>
+            </div>
+            <div class="or-with-lines">
+              <p>or</p>
+            </div>
+            <div class="custom-btn-fill w-100">
+              <a href="javascript:void(0);" class="w-100">Payment Term</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="assets/js/popper.min.js"></script>

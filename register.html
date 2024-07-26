@@ -36,8 +36,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="login-register-block-wrapper">
-                    <!-- Login Modal -->
-                    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <!-- Register Modal -->
+                    <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-body">
@@ -45,28 +45,29 @@
                                         <img src="assets/images/logos/logo.png" alt="">
                                     </div>
 
-                                    <h2>Welcome Back</h2>
-                                    <h4>Log In to your account</h4>
+                                    <h2>Get Started with <span>MyFirst</span></h2>
+                                    <h4>Create your free account</h4>
                                     <form action="">
+                                        <div class="input-group mb-4">
+                                            <span class="input-group-text" id="full-name-addon"><img src="assets/images/icons/user-icon.png" alt=""></span>
+                                            <input type="text" class="form-control ps-0" placeholder="Your Full Name" aria-label="emailAddress" aria-describedby="full-name-addon">
+                                        </div>
                                         <div class="input-group mb-4">
                                             <span class="input-group-text" id="email-address-addon"><img src="assets/images/icons/email-icon.png" alt=""></span>
                                             <input type="text" class="form-control ps-0" placeholder="Email Address" aria-label="emailAddress" aria-describedby="email-address-addon">
                                         </div>
                                         <div class="input-group mb-2">
-                                            <span class="input-group-text" id="password-addon"><img src="assets/images/icons/password.png" alt=""></span>
-                                            <input type="password" id="myPassword" class="myPassword form-control ps-0" placeholder="Password" aria-label="password" aria-describedby="password-addon">
+                                            <span class="input-group-text" id="password-addon-register"><img src="assets/images/icons/password.png" alt=""></span>
+                                            <input type="password" class="myPassword form-control ps-0" placeholder="Password" aria-label="password" aria-describedby="password-addon-register">
                                             <span class="input-group-text">
                                                 <i class="custom-eye-icon togglePassword"></i>
                                             </span>
                                         </div>
-                                        <div class="reset-password">
-                                            <a href="">Recover Password</a>
-                                        </div>
                                         <div class="login-register-option-in-form mt-5 bm-5">
-                                            <h4>Don't have an account? <a href="register.html">Sign Up</a></h4>
+                                            <h4>Already have an account? <a href="index.html">Login</a></h4>
                                         </div>
                                         <div class="custom-btn-fill mt-4 pt-2">
-                                            <button type="submit">Log In</button>
+                                            <button type="submit">Sign Up</button>
                                         </div>
                                     </form>
                                 </div>

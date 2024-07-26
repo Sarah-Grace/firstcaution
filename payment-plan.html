@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/query.css">
+  <title>Firstcaution</title>
+</head>
+<body>
+
+
+  <aside class="site-sidebar">
+    <div class="site-sidebar-inner-wrapper">
+      <a href="home.html" class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo">
+        <img src="assets/images/logos/logo.png" alt="logo">
+      </a>
+      <div class="sidebar-menu-wrapper">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link link-body-emphasis" aria-current="page">
+              <img src="assets/images/icons/home.svg" alt="">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="contracts.html" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/my-contracts.svg" alt="">
+              <span>My Contracts</span>
+            </a>
+          </li>
+          <li>
+            <a href="bills.html" class="nav-link active">
+              <img src="assets/images/icons/my-bills.svg" alt="">
+              <span>My Bills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/my-deposit.svg" alt="">
+              <span>My Deposit</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/firstees.svg" alt="">
+              <span>Firstees</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/chatbot.svg" alt="">
+              <span>Chatbot</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav nav-pills flex-column">
+          <li class="mob-profile">
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/user-profile.png" alt="">
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/settings.svg" alt="">
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <img src="assets/images/icons/logout.svg" alt="">
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="site-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="site-header-inner-wrapper">
+              <div class="mob-header-logo">
+                <a href="home.html" class="mob-site-sidebar-logo">
+                  <img src="assets/images/logos/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="page-title">
+                <h1>My Bills</h1>
+              </div>
+              <div class="header-cta-wrapper">
+                <div class="header-search-field">
+                  <form class="" role="search">
+                    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                  </form>
+                </div>
+                <div class="header-settings">
+                  <img src="assets/images/icons/settings-1.svg" alt="">
+                </div>
+                <div class="header-notifications">
+                  <img src="assets/images/icons/notifications.svg" alt="">
+                </div>
+                <div class="header-profile">
+                  <img src="assets/images/icons/user-profile.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-main-section pay-bill-page">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card contract-detail-card">
+                    <div class="back-btn-block">
+                        <a href="bills.html" class="back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+                        <h2>Request Monthly Payment</h2>
+                    </div>
+                    <div class="tabs-card-wrapper">
+                        <ul class="nav nav-tabs custom-nav-tabs" id="contract-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="annual-premium-tab" data-bs-toggle="tab" data-bs-target="#annual-premium" type="button" role="tab" aria-controls="annual-premium" aria-selected="true">Annual Premium</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="claim-invoice-tab" data-bs-toggle="tab" data-bs-target="#claim-invoice" type="button" role="tab" aria-controls="claim-invoice" aria-selected="false">Claim Invoice</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="contract-tab-content">
+                            <div class="tab-pane fade show active" id="annual-premium" role="tabpanel" aria-labelledby="annual-premium-tab">
+                                <div class="pay-bill-form">
+                                    <form action="">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-6 col-xxl-4">
+                                              <div class="custom-detail-block custom-detail-block-select mb-4 mb-lg-0">
+                                                  <div class="custom-detail-list custom-list-select">
+                                                      <label for="">Duration:</label>
+                                                      <div class="custom-detail-list-item">
+                                                          <select class="form-select" aria-label="Default select example">
+                                                          <option selected>Select one</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="payment-plan-criteria">
+                                                      <div class="payment-plan-criteria-heading">
+                                                          <img src="assets/images/icons/calendar.png" alt="">
+                                                          Payment Plan Criteria:
+                                                      </div>
+                                                      <div class="payment-plan-criteria-list">
+                                                          <div class="payment-plan-criteria-list-item">
+                                                              <div class="payment-plan-criteria-list-title">Administrative Fees</div>
+                                                              <div class="dotted-line"></div>
+                                                              <div class="payment-plan-criteria-list-amount">CHF 60</div>
+                                                          </div>
+                                                          <div class="payment-plan-criteria-list-item">
+                                                              <div class="payment-plan-criteria-list-title">Fee per Installment</div>
+                                                              <div class="dotted-line"></div>
+                                                              <div class="payment-plan-criteria-list-amount">CHF 5</div>
+                                                          </div>
+                                                          <div class="payment-plan-criteria-list-item">
+                                                              <div class="payment-plan-criteria-list-title">Interest Rate</div>
+                                                              <div class="dotted-line"></div>
+                                                              <div class="payment-plan-criteria-list-amount">0%</div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="mt-4">
+                                                      <label for="textareaReason" class="form-label">Reason:</label>
+                                                      <textarea class="form-control" id="textareaReason" rows="3"></textarea>
+                                                    </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-12 col-lg-6 col-xxl-8">
+                                              <div class="d-flex flex-column justify-content-between h-100">
+                                                  <div class="custom-detail-list custom-list-select max-width-480">
+                                                      <label>Start Date:</label>
+                                                      <div class="custom-detail-list-item">
+                                                          <select class="form-select">
+                                                              <option selected>Last day of current month</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="custom-btn-fill text-end">
+                                                      <button type="submit">Submit</button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="claim-invoice" role="tabpanel" aria-labelledby="claim-invoice-tab">
+                                .......
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

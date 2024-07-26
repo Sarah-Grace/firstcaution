@@ -115,10 +115,10 @@
     .contract-detail-card {
         padding: 20px;
     }
-    .contract-detail-list-item {
+    .custom-detail-list-item {
         padding: 6px;
     }
-    .contract-detail-list-item h3,
+    .custom-detail-list-item h3,
     .notice-block h3 {
         font-size: 12px;
     }
@@ -143,5 +143,41 @@
     }
     .btn-download {
         padding: 16px;
+    }
+    .custom-list-radio-btn  .form-check-label span {
+        font-size: 14px;
+    }
+    .custom-list-radio-btn  .custom-detail-list-item {
+        padding: 0 10px 0 6px;
+        line-height: 40px;
+    }
+    .pay-bill-page .custom-btn-fill a {
+        display: block;
+        padding: 16px 6px !important;
+        font-size: 12px;
+    }
+    .pay-bill-page .custom-detail-block-radio-btns {
+        margin-bottom: 30px;
+    }
+    .or-with-lines p:before,
+    .or-with-lines p:after {
+        width: calc((100% / 2) - 50px);
+    }
+}
+@media only screen and (max-width: 475px) {
+    .custom-list-select select {
+        padding: 0 10px;
+        font-size: 13px;
+        line-height: 40px;
+    }
+    .payment-plan-criteria-heading {
+        gap: 6px;
+        font-size: 14px;
+    }
+    .payment-plan-criteria {
+        padding: 10px;
+    }
+    .payment-plan-criteria-list-item {
+        font-size: 12px;
     }
 }

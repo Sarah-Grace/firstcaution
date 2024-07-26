@@ -240,6 +240,7 @@ main {
 }
 .site-main-section {
     background-color: var(--color-bg-1);
+    min-height: calc(100vh - 100px);
 }
 .my-contracts-block {
     background-color: var(--secondary-color);
@@ -757,7 +758,7 @@ main {
 .contract-detail-item-info h3 {
     font-weight: 500;
 }
-.contract-detail-list-item {
+.custom-detail-list-item {
     display: flex;
     justify-content: space-between;
     border: 1px solid #E6EFF5;
@@ -1043,4 +1044,195 @@ main {
 }
 .setup-apple-pay .custom-btn-fill a {
     padding: 16px 20px !important;
+}
+/* sign in */
+.login-page-header {
+    height: 100px;
+}
+.login-register-block-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-register-block-wrapper .modal-body {
+    padding: 44px 34px;
+}
+.login-register-block-wrapper h2  {
+    color: var(--heading-color-1);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.login-register-block-wrapper h4  {
+    text-align: center;
+    font-weight: 400;
+    color: #8B8D97;
+    margin-bottom: 70px;
+}
+.custom-eye-icon {
+    width: 15px;
+    height: 11px;
+    background-image: url(../images/icons/eye-regular.png);
+    background-repeat: no-repeat; 
+     background-size: contain;
+}
+.custom-fa-eye-slash {
+    background-image: url(../images/icons/eye-slash-regular.png);
+}
+.login-register-block-wrapper .input-group {
+    background: #F6F6F6;
+    border-radius: 6px;
+}
+.login-register-block-wrapper .input-group-text {
+    border: none;
+    border-radius: unset;
+    background-color: transparent;
+    padding: 0 16px;
+}
+.login-register-block-wrapper .input-group>.form-control {
+    background: transparent;
+    border: none;
+}
+.login-register-block-wrapper .input-group>.form-control:focus {
+    box-shadow: none;
+}
+.login-register-block-wrapper .reset-password {
+    text-align: end;
+}
+.login-register-block-wrapper .reset-password a {
+    color: var(--primary-color);
+    line-height: 17px;
+    font-size: 14px;
+    text-align: end;
+    text-decoration: none;
+}
+.login-register-block-wrapper .custom-btn-fill {
+    font-size: 18px;
+}
+.custom-detail-list label{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+.pay-bill-page .back-btn-block {
+    margin-bottom: 56px;
+}
+.custom-detail-list-item .form-check-label {
+    flex: 1 1 auto;
+}
+.custom-list-radio-btn  .custom-detail-list-item {
+    line-height: 54px;
+    padding: 0 26px;
+    align-items: center;
+}
+.custom-list-radio-btn  .form-check-input[type=radio] {
+    margin-top: 0;
+    border-width: 0px;
+    position: relative;
+    background-size: 23px;
+}
+.custom-list-radio-btn  .form-check-label span {
+    padding-left: 16px;
+}
+.custom-list-radio-btn  .form-check-input[type=radio]:before {
+    content: "";
+    width: 1.3rem;
+    height: 1.3rem;
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.pay-bill-page .custom-detail-block-radio-btns {
+    margin-bottom: 60px;
+}
+#requestModal .modal-content{
+    max-width: 423px;
+}
+.btn-close {
+    color: var(--heading-color-1);
+    background-color: #F1F3F9;
+    border-radius: 8px;
+}
+#requestModalLabel {
+    color: var(--heading-color-1);
+    line-height: 30px;
+}
+#requestModal .modal-header {
+    padding: 29px 24px 0 24px;
+    border-bottom: none;
+}
+#requestModal .modal-body {
+    padding: 50px 24px 70px 24px;
+}
+.request-modal-img {
+    margin-bottom: 26px;
+}
+#requestModal h3 {
+    margin-bottom: 30px;
+}
+.custom-list-select .custom-detail-list-item {
+    padding: 0;
+}
+.custom-list-select  select {
+    background-color: transparent;
+    border: none;
+    line-height: 50px;
+    padding: 0 26px;
+}
+.custom-list-radio-btn   .form-select:focus {
+    border-color: unset;
+    box-shadow: none;
+}
+.custom-detail-block-select {
+    margin-bottom: 28px;
+}
+.payment-plan-criteria {
+    border: 1px solid #EEEEEE;
+    background-color: #F0F4FF;
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin-top: 28px;
+}
+.payment-plan-criteria-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.payment-plan-criteria-list {
+    margin-top: 33px;
+}
+.payment-plan-criteria-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grey-color-1);
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.dotted-line {
+    background-image: url(../images/icons/dotted-line.png);
+    height: 1px;
+    flex: 1 1 auto;
+    margin: 0 10px;
+}
+.payment-plan-criteria-list-amount {
+    color: var(--text-color);
+    font-weight: 500;
+}
+.max-width-480 {
+    max-width: 480px;
+}
+#textareaReason {
+    background: #F9F9F9;
 }

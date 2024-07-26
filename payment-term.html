@@ -168,7 +168,7 @@
                                           </div>
                                       </div>
                                       <div class="custom-btn-fill text-end">
-                                          <button type="submit">Submit</button>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#successModal">Submit</button>
                                       </div>
                                   </div>
                               </div>
@@ -181,6 +181,26 @@
       </div>
     </div>
   </main>
+    <!-- Confirmation Modal -->
+    <div class="modal fade custom-modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="successModalLabel">Success</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="custom-modal-img">
+                <img src="assets/images/confirmation.png" alt="">
+                </div>
+                <h3 class="mb-5">Your request for payment term is successfully submitted</h3>
+                <div class="custom-btn-fill w-100">
+                <a href="javascript:void(0);" class="w-100">Okey</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="assets/js/popper.min.js"></script>

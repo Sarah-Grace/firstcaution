@@ -192,7 +192,7 @@
                                                       </div>
                                                   </div>
                                                   <div class="custom-btn-fill text-end">
-                                                      <button type="submit">Submit</button>
+                                                      <button type="button" data-bs-toggle="modal" data-bs-target="#paymentPlanConfirmationModal">Submit</button>
                                                   </div>
                                               </div>
                                           </div>
@@ -211,6 +211,43 @@
       </div>
     </div>
   </main>
+  <!-- Request Modal -->
+  <div class="modal fade custom-modal" id="paymentPlanConfirmationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentPlanConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="paymentPlanConfirmationModalLabel">Confirmation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="custom-modal-img">
+            <img src="assets/images/confirmation.png" alt="">
+          </div>
+          <div class="custom-detail-list">
+            <div class="custom-detail-list-item">
+                <div class="contract-detail-item-title">
+                    <h3 class="mb-0">Monthly Installment</h3>
+                </div>
+                <div class="contract-detail-item-info">
+                    <h3 class="mb-0">CHF 1,140.00</h3>
+                </div>
+            </div>
+            <div class="custom-detail-list-item">
+                <div class="contract-detail-item-title">
+                    <h3 class="mb-0">Total Plan Amount</h3>
+                </div>
+                <div class="contract-detail-item-info">
+                    <h3 class="mb-0">CHF 1,140.00</h3>
+                </div>
+            </div>
+        </div>
+          <div class="custom-btn-fill w-100">
+            <a href="javascript:void(0);" class="w-100">Confirm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="assets/js/popper.min.js"></script>

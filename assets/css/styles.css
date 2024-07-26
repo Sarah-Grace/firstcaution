@@ -400,6 +400,30 @@ main {
     color: white;
     font-size: 21px;
 }
+.firstees-card .card-img {
+    position: relative;
+}
+.card-img-bottom-sec {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #3E3E3E 100%);
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 6px;
+}
+.card-img-sec-badge {
+    background-color: rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    left: 8px;
+    bottom: 17px;
+}
+.card-img-sec-badge .badge-separator {
+    padding: 0 12px;
+}
 .payment-methods-block {
     background-color: white;
     padding: 20px;
@@ -407,16 +431,19 @@ main {
     border: 1px solid #E6EFF5;
     margin-top: 20px;
 }
+.btn-payment-method {
+    flex: 1 1 auto;
+}
 .btn-payment-method a {
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 15px;
     line-height: 37px;
     border-radius: 8px;
     background-color: #F6F6F6;
     color: var(--grey-color-1);
+    padding: 0 18px;
 }
 .my-bills-block {
     background-color: white;
@@ -1151,7 +1178,7 @@ main {
 .pay-bill-page .custom-detail-block-radio-btns {
     margin-bottom: 60px;
 }
-#requestModal .modal-content{
+.custom-modal .modal-content{
     max-width: 423px;
 }
 .btn-close {
@@ -1159,21 +1186,21 @@ main {
     background-color: #F1F3F9;
     border-radius: 8px;
 }
-#requestModalLabel {
+.custom-modal .modal-title {
     color: var(--heading-color-1);
     line-height: 30px;
 }
-#requestModal .modal-header {
+.custom-modal .modal-header {
     padding: 29px 24px 0 24px;
     border-bottom: none;
 }
-#requestModal .modal-body {
+.custom-modal .modal-body {
     padding: 50px 24px 70px 24px;
 }
-.request-modal-img {
+.custom-modal-img {
     margin-bottom: 26px;
 }
-#requestModal h3 {
+.custom-modal h3 {
     margin-bottom: 30px;
 }
 .custom-list-select .custom-detail-list-item {
@@ -1235,4 +1262,27 @@ main {
 }
 #textareaReason {
     background: #F9F9F9;
+}
+#confirmationModal h3,
+#successModal h3 {
+    color: #8B8D97;
+    font-weight: 500;
+    margin-bottom: 0;
+    max-width: 352px;
+}
+#confirmationModal .modal-body {
+    padding-bottom: 37px;
+}
+.custom-modal .custom-detail-list {
+    margin-bottom: 44px;
+}
+.custom-modal .custom-detail-list-item {
+    background-color: white;
+    padding: 12px 18px;
+}
+#paymentPlanConfirmationModal .custom-modal-img {
+    margin-bottom: 58px;
+}
+#paymentPlanConfirmationModal .modal-body {
+    padding-bottom: 40px;
 }

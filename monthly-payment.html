@@ -197,7 +197,7 @@
                           </div>
                           <div class="col-12 col-lg-6 col-xxl-8 align-self-end">
                             <div class="custom-btn-fill text-end">
-                              <button type="submit">Submit</button>
+                              <button type="button" data-bs-toggle="modal" data-bs-target="#confirmationModal">Submit</button>
                             </div>
                           </div>
                         </div>
@@ -209,6 +209,27 @@
       </div>
     </div>
   </main>
+  <!-- Confirmation Modal -->
+  <div class="modal fade custom-modal" id="confirmationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="confirmationModalLabel">Confirmation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="custom-modal-img">
+            <img src="assets/images/confirmation.png" alt="">
+          </div>
+          <h3>Your request for monthly payment of the Annual Premium bill has been submitted successfully.</h3>
+          <h3 class="mb-5">Bills will be generated to replace the Annual Premium open bill.</h3>
+          <div class="custom-btn-fill w-100">
+            <a href="javascript:void(0);" class="w-100">Okey</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="assets/js/popper.min.js"></script>

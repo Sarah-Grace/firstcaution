@@ -737,7 +737,7 @@ main {
     flex: 1 1 20%;
 }
 /* contract detail page */
-.contract-detail-card {
+.custom-detail-card {
     padding: 30px 40px 65px 40px;
     margin-top: 30px;
     margin-bottom: 56px;
@@ -778,11 +778,11 @@ main {
     width: 8px;
     height: 8px;
 }
-.contract-detail-item-title h3 {
+.custom-list-detail-item-title h3 {
     font-weight: 400;
     color: var(--grey-color-1);
 }
-.contract-detail-item-info h3 {
+.custom-list-detail-item-info h3 {
     font-weight: 500;
 }
 .custom-detail-list-item {
@@ -1155,6 +1155,7 @@ main {
     border-width: 0px;
     position: relative;
     background-size: 23px;
+    padding: 0;
 }
 .custom-list-radio-btn  .form-check-label span {
     padding-left: 16px;
@@ -1178,7 +1179,7 @@ main {
 .pay-bill-page .custom-detail-block-radio-btns {
     margin-bottom: 60px;
 }
-.custom-modal .modal-content{
+.custom-modal .modal-dialog{
     max-width: 423px;
 }
 .btn-close {
@@ -1260,6 +1261,9 @@ main {
 .max-width-480 {
     max-width: 480px;
 }
+.max-width-418 {
+    max-width: 418px;
+}
 #textareaReason {
     background: #F9F9F9;
 }
@@ -1285,4 +1289,109 @@ main {
 }
 #paymentPlanConfirmationModal .modal-body {
     padding-bottom: 40px;
+}
+/* deposit detail page */
+.deposit-detail-list {
+    background-color: var(--color-bg-3);
+    padding: 21px 23px;
+    border: 1px solid #DFEAF2;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+.deposit-detail-list .custom-detail-list-item {
+    padding: 6px 18px;
+    background-color: white;
+    border: none;
+}
+.deposit-detail-list .custom-list-detail-item-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.deposit-detail-list .custom-list-detail-item-title h3,
+.deposit-detail-list .custom-list-detail-item-info h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+.deposit-detail-list .custom-list-detail-item-info h3{
+    color: var(--text-color);
+}
+.deposit-detail-list .custom-list-detail-item-info {
+    display: flex;
+    align-items: center;
+}
+/* adjust details */
+.adjust-detail-card .input-group {
+    background-color: var(--color-bg-3);
+    border-radius: 8px;
+    border: 1px solid #DFEAF2;
+    padding: 0 20px;
+}
+.adjust-detail-card .input-group input,
+.adjust-detail-card .input-group .input-group-text {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #909090;
+}
+.adjust-detail-card .input-group input {
+    padding-left: 5px;
+}
+.adjust-detail-card .input-group input:focus {
+    box-shadow: none;
+}
+input[type=range] {
+    height: 1px;
+    -webkit-appearance: none;
+    margin: 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: var(--secondary-color);
+    border-radius: 1px;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: var(--secondary-color);
+    border-radius: 1px;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 6px solid var(--secondary-color);
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+.adjust-detail-card input {
+    background-color: var(--color-bg-3);
+    border-radius: 8px;
+    border: 1px solid #DFEAF2;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.adjust-detail-transfer-deposit-section .custom-detail-list label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--heading-color-1);
+}
+.adjust-detail-transfer-deposit-section {
+    display: none;
+}
+#adjustDepositConfirmationModal h3 {
+    color: #8B8D97;
+    font-weight: 500;
 }

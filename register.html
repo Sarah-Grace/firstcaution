@@ -58,7 +58,7 @@
                                         </div>
                                         <div class="input-group mb-2">
                                             <span class="input-group-text" id="password-addon-register"><img src="assets/images/icons/password.png" alt=""></span>
-                                            <input type="password" class="myPassword form-control ps-0" placeholder="Password" aria-label="password" aria-describedby="password-addon-register">
+                                            <input type="password" class="myPassword form-control ps-0" id="myPasswordRegister" placeholder="Password" aria-label="password" aria-describedby="password-addon-register">
                                             <span class="input-group-text">
                                                 <i class="custom-eye-icon togglePassword"></i>
                                             </span>
@@ -86,5 +86,10 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $('#register').modal('show');
+    });
+  </script>
 </body>
 </html>

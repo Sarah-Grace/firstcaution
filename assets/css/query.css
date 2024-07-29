@@ -15,6 +15,9 @@
     #payment-method-accordion.accordion .accordion-item {
         flex: 0 0 48%;
     }
+    .adjust-detail-card .max-width-418 {
+        max-width: 100%;
+    }
 }
 @media only screen and (max-width: 991px) {
     aside {
@@ -112,7 +115,7 @@
     .my-contracts-block {
         padding: 20px 8px;
     }
-    .contract-detail-card {
+    .custom-detail-card {
         padding: 20px;
     }
     .custom-detail-list-item {
@@ -163,6 +166,9 @@
     .or-with-lines p:after {
         width: calc((100% / 2) - 50px);
     }
+    .adjust-detail-card .custom-btn-fill button {
+        padding: 16px !important;
+    }
 }
 @media only screen and (max-width: 475px) {
     .custom-list-select select {
@@ -179,5 +185,26 @@
     }
     .payment-plan-criteria-list-item {
         font-size: 12px;
+    }
+    .deposit-detail-list .custom-detail-list-item {
+        flex-wrap: wrap;
+        padding: 6px 8px;
+    }
+    .custom-list-detail-item-title img {
+        width: 20px;
+    }
+    .deposit-detail-list .custom-list-detail-item-title h3, .deposit-detail-list .custom-list-detail-item-info h3 {
+        font-size: 14px;
+    }
+    .deposit-detail-list .custom-list-detail-item-title {
+        gap: 5px;
+    }
+    .deposit-detail-list .custom-list-detail-item-info h3 {
+        margin-left: 25px;
+    }
+}
+@media only screen and (max-height: 620px) {
+    .site-sidebar .nav-pills .nav-link {
+        line-height: 40px;
     }
 }

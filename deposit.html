@@ -35,13 +35,13 @@
             </a>
           </li>
           <li>
-            <a href="bills.html" class="nav-link active">
+            <a href="bills.html" class="nav-link link-body-emphasis">
               <img src="assets/images/icons/my-bills.svg" alt="">
               <span>My Bills</span>
             </a>
           </li>
           <li>
-            <a href="deposit.html" class="nav-link link-body-emphasis">
+            <a href="deposit.html" class="nav-link active">
               <img src="assets/images/icons/my-deposit.svg" alt="">
               <span>My Deposit</span>
             </a>
@@ -95,7 +95,7 @@
                 </a>
               </div>
               <div class="page-title">
-                <h1>My Bills</h1>
+                <h1>My Deposit</h1>
               </div>
               <div class="header-cta-wrapper">
                 <div class="header-search-field">
@@ -125,55 +125,55 @@
             <div class="col-12">
                 <div class="card custom-detail-card">
                     <div class="back-btn-block">
-                        <a href="bills.html" class="back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
-                        <h2>Payment Term</h2>
+                        <a href="home.html" class="back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+                        <h2>Deposit Detail</h2>
                     </div>
-                    <div class="pay-bill-form">
-                        <form action="">
-                          <div class="row">
-                              <div class="col-12 col-lg-6 col-xxl-4">
-                                  <div class="custom-detail-block custom-detail-block-select mb-4 mb-lg-0">
-                                      <div class="custom-detail-list custom-list-select">
-                                          <label for="">Current Date:</label>
-                                          <div class="custom-detail-list-item">
-                                            <input type="date" class="select-date form-control">
-                                          </div>
-                                      </div>
-                                      <div class="payment-plan-criteria">
-                                          <div class="payment-plan-criteria-heading">
-                                              <img src="assets/images/icons/note-icon.png" alt="">
-                                              Important Note:
-                                          </div>
-                                          <div class="payment-plan-criteria-list">
-                                              <div class="payment-plan-criteria-list-item">
-                                                  <div class="payment-plan-criteria-list-title">Maximum days for claim</div>
-                                                  <div class="dotted-line"></div>
-                                                  <div class="payment-plan-criteria-list-amount">60</div>
-                                              </div>
-                                              <div class="payment-plan-criteria-list-item">
-                                                  <div class="payment-plan-criteria-list-title">Maximum days for Annual</div>
-                                                  <div class="dotted-line"></div>
-                                                  <div class="payment-plan-criteria-list-amount">30</div>
-                                              </div>
-                                          </div>
-                                      </div>
+                    <div class="row">
+                        <div class="col-12 col-md-8 col-lg-12 col-xl-6">
+                          <div class="custom-detail-list deposit-detail-list">
+                              <div class="custom-detail-list-item">
+                                  <div class="custom-list-detail-item-title">
+                                      <img src="assets/images/icons/granted.png" alt="">
+                                      <h3 class="mb-0">Granted Amount</h3>
+                                  </div>
+                                  <div class="custom-list-detail-item-info">
+                                      <h3 class="mb-0">CHF 450.00</h3>
                                   </div>
                               </div>
-                              <div class="col-12 col-lg-6 col-xxl-8">
-                                  <div class="d-flex flex-column justify-content-between h-100">
-                                      <div class="custom-detail-list custom-list-select max-width-480">
-                                          <label>New Date:</label>
-                                          <div class="custom-detail-list-item">
-                                            <input type="date" class="select-date form-control">
-                                          </div>
-                                      </div>
-                                      <div class="custom-btn-fill text-end">
-                                          <button type="button" data-bs-toggle="modal" data-bs-target="#successModal">Submit</button>
-                                      </div>
+                              <div class="custom-detail-list-item">
+                                  <div class="custom-list-detail-item-title">
+                                      <img src="assets/images/icons/flexible.png" alt="">
+                                      <h3 class="mb-0">Flexible Deposit</h3>
+                                  </div>
+                                  <div class="custom-list-detail-item-info">
+                                      <h3 class="mb-0">CHF 460.00</h3>
+                                  </div>
+                              </div>
+                              <div class="custom-detail-list-item">
+                                  <div class="custom-list-detail-item-title">
+                                      <img src="assets/images/icons/annual.png" alt="">
+                                      <h3 class="mb-0">Annual Premium</h3>
+                                  </div>
+                                  <div class="custom-list-detail-item-info">
+                                      <h3 class="mb-0">CHF 200.00</h3>
+                                  </div>
+                              </div>
+                              <div class="custom-detail-list-item">
+                                  <div class="custom-list-detail-item-title">
+                                      <img src="assets/images/icons/promo.png" alt="">
+                                      <h3 class="mb-0">Promo Code</h3>
+                                  </div>
+                                  <div class="custom-list-detail-item-info">
+                                      <h3 class="mb-0">DISCOUNT 20</h3>
                                   </div>
                               </div>
                           </div>
-                        </form>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-12 col-xl-6 align-self-end">
+                          <div class="custom-btn-fill text-end">
+                              <a href="adjust-deposit.html">Adjust</a>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,26 +181,6 @@
       </div>
     </div>
   </main>
-    <!-- Confirmation Modal -->
-    <div class="modal fade custom-modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="successModalLabel">Success</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <div class="custom-modal-img">
-                <img src="assets/images/confirmation.png" alt="">
-                </div>
-                <h3 class="mb-5">Your request for payment term is successfully submitted</h3>
-                <div class="custom-btn-fill w-100">
-                <a href="javascript:void(0);" class="w-100">Okey</a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="assets/js/popper.min.js"></script>

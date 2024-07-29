@@ -1468,3 +1468,6 @@ input[type=range]::-webkit-slider-thumb {
     width: 150px;
     border-radius: 8px;
 }
+.divider {
+    border: 1px solid #8b8888; 
+}

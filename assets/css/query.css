@@ -10,6 +10,18 @@
     --text-color: #263B67;
     --font-family-inter: "Inter", sans-serif;
 }
+@media screen and (max-width: 1439px) {
+    .open-bills-list .custom-tab-list-item-title {
+        flex: 1 0 220px;
+    }
+    .open-bills-list  .custom-btn-fill a {
+        padding: 16px !important;
+    }
+    .custom-tab-list-issue-date-wrapper, 
+    .custom-tab-list-status-wrapper {
+        flex: 1 1 auto;
+    }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     .granted-amount-text {
         font-size: 22px;
@@ -135,6 +147,28 @@
         border: none;
         margin-left: 10px;
         line-height: 18px;
+    }
+    .open-bills-list .custom-list-item{
+        display: block;
+    }
+    #bills-tab-content .custom-tab-list-item-title-image {
+        display: none;
+    }
+    #bills-tab-content .custom-tab-list-item-title-name {
+        margin-bottom: 30px;
+    }
+    #bills-tab-content .custom-tab-list-issue-date-wrapper,
+    #bills-tab-content .custom-tab-list-status-wrapper {
+        display: flex;
+        gap: 5px;
+    }
+    #bills-tab-content .custom-list-item {
+        position: relative;
+    }
+    #bills-tab-content .custom-tab-list-view-detail-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {

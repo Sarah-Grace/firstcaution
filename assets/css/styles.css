@@ -256,6 +256,30 @@ main {
     line-height: 43px;
     color: var(--text-color);
 }
+.user-location-block {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.user-location-block h3 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+    color: var(--heading-color-1);
+    margin-bottom: 0;
+}
+.link-btn-blue,
+.block-title-blue {
+    color: var(--heading-color-1);
+}
+.user-location-block p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    color: var(--grey-color-1);
+    margin-bottom: 0;
+}
 .granted-amount-block {
     padding-left: 1px;
 }
@@ -288,32 +312,7 @@ main {
 .granted-amount-number {
     color: var(--text-color);
 }
-.avatar-group {
-    display: flex;
-    margin-bottom: 3px
-}
-.avatar {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 auto;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin: 0;
-    margin-left: -10px;
-    background: var(--primary-color);
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.avatar:first-child {
-    margin-left: 0; 
-}
-.avatar-text {
-    color: white;
-    font-size: 8px;
-    font-weight: 500;
-}
+
 .my-contracts-block .block-title{
     color: white;
 }
@@ -344,7 +343,6 @@ main {
 }
 .firstees-card .card-img img {
     width: 100%;
-    height: 100%;
 }
 .card-content {
     padding: 15px 19px 13px 19px;
@@ -628,12 +626,10 @@ main {
     padding: 20px 32px;
     border-bottom: 1px solid #E6EFF5;
     background-color: var(--color-bg-3);
+    gap: 5px;
 }
 .custom-list-item:last-child {
     border-bottom: none;
-}
-.custom-tab-list-item-title {
-    display: flex;
 }
 .custom-tab-list-item-title-name h4 {
     font-size: 16px;
@@ -653,17 +649,33 @@ main {
     font-weight: 500;
     line-height: 18px;
     margin-bottom: 0;
+    color: var(--text-color);
 }
 .custom-tab-list-item-title {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+.contracts-page .custom-tab-list-item-title {
+    display: block;
+}
+.contracts-page .custom-tab-list-item-title-name h4 {
+    color: var(--text-color);
+}
+.custom-tab-list-item-title-address h4 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    color: var(--text-color);
+}
 .custom-tab-list-status-title p {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     margin-bottom: 4px;
+    color: var(--grey-color-1);
 }
 .custom-status p {
     font-size: 15px;
@@ -1471,3 +1483,86 @@ input[type=range]::-webkit-slider-thumb {
 .divider {
     border: 1px solid #8b8888; 
 }
+.card-badges-wrapper {
+    display: flex;
+    gap:10px;
+    margin-top: 11px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.firstees-page .card-img-top-sec {
+    justify-content: flex-end;
+}
+.bordered-btn a{
+    display: inline-block;
+    width: auto;
+    border: 1px solid #919191;
+    text-decoration: none;
+    color: #919191;
+    padding: 0 30px;
+    line-height: 28px;
+    border-radius: 8px;
+}
+.firstees-page .firstees-card {
+    border: 1px solid #E5E5E5; 
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.firstees-page .firstees-card .card-img {
+    border-radius: 9px;
+}
+.firstees-page .card-img-top-sec-card-heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+    font-size: 21px;
+}
+.firstees-page .firstees-card .card-img {
+    max-height: 228px;
+}
+.card-content {
+    padding: 15px 19px 17px 19px; 
+}
+.firstees-map,
+.firtees-cards-section-scrollable  {
+    height: calc(100vh - 220px);
+    overflow: hidden;
+}
+.firtees-cards-section-scrollable {
+    height: calc(100vh - 220px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.scroll-btn-wrapper {
+    background: linear-gradient(180deg, rgba(245, 247, 250, 0.03) 2%, rgba(245, 247, 250, 0.17) 10%, #F5F7FA 60%);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 63px;
+    padding-top: 20px;
+}
+.scroll-btn:active {
+    border: none;
+    border-color: transparent;
+    outline: none;
+}
+.scroll-btn img:focus-visible {
+    outline: none;
+}
+.text-scroll-down {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--heading-color-1);
+}
+.firtees-cards-section-scrollable::-webkit-scrollbar {
+    width: 0px;
+}  

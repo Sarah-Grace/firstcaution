@@ -27,3 +27,12 @@ $(document).on('input', '#flexible-amount', function() {
 $("#calcPremium").click(function(){
     $(".adjust-detail-transfer-deposit-section").show()
 });
+// scroll down
+$(document).ready(function() {
+    $(".scroll-btn").click(function(event){
+        $('.firtees-cards-section-scrollable').animate({scrollTop: '+=500px'}, 800);
+    });
+    if ($(window).width() < 767) {
+    $(".custom-tab-list-view-detail-btn a").html("View");
+    }
+});

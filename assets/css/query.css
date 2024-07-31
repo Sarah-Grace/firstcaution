@@ -1,3 +1,24 @@
+:root {
+    --primary-color: #3876DA;
+    --secondary-color: #F8A81A;
+    --grey-color: #B1B1B1;
+    --grey-color-1: #868686;
+    --color-bg-1: #f5f7fa;
+    --color-bg-2: #EEEEEE;
+    --color-bg-3: #F9F9F9;
+    --heading-color-1: #253B6A;
+    --text-color: #263B67;
+    --font-family-inter: "Inter", sans-serif;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .granted-amount-text {
+        font-size: 22px;
+    }
+    .card-img-sec-badge {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
 @media screen and (max-width: 1380px) {
     .btn-payment-method img {
         width: 18px;
@@ -17,6 +38,11 @@
     }
     .adjust-detail-card .max-width-418 {
         max-width: 100%;
+    }
+    .filters-section,
+    .filters-section-inner-wrapper {
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -99,6 +125,17 @@
     #payment-method-accordion.accordion .accordion-item {
         flex: 0 0 100%;
     }
+    .contracts-page .custom-tab-list-issue-date-wrapper, 
+    .contracts-page .custom-tab-list-status-title {
+        display: none;
+    }
+    .contracts-page .custom-tab-list-view-detail-btn a {
+        color: var(--primary-color);
+        padding: 0;
+        border: none;
+        margin-left: 10px;
+        line-height: 18px;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {
     .current-contracts-block .padding-20,
@@ -169,6 +206,23 @@
     .adjust-detail-card .custom-btn-fill button {
         padding: 16px !important;
     }
+    .filter-search {
+        width: 250px;
+        flex: 1 1 auto;
+        padding: 0 8px 0 10px;
+    }
+    .max-distance-filter {
+        padding: 0 10px;
+    }
+    .filter-search input {
+        font-size: 12px;
+    }
+    .filter-search span {
+        font-size: 13px;
+    }
+    .custom-nav-tabs .nav-link {
+        padding: 0 10px 10px 10px;
+    }
 }
 @media only screen and (max-width: 475px) {
     .custom-list-select select {
@@ -201,6 +255,24 @@
     }
     .deposit-detail-list .custom-list-detail-item-info h3 {
         margin-left: 25px;
+    }
+    .tabs-card-wrapper .custom-list-item {
+        padding: 10px;
+    }
+    .tabs-card {
+        padding: 37px 5px 50px 5px;
+    }
+    .tabs-card .custom-tab-list-item-title-name h4 {
+        font-size: 14px;
+    }
+    .tabs-card .custom-tab-list-item-title-address h4 {
+        font-size: 13px;
+    }
+    .custom-status p {
+        font-size: 13px;
+    }
+    .contracts-page .custom-tab-list-view-detail-btn a {
+        font-size: 12px;
     }
 }
 @media only screen and (max-height: 620px) {

@@ -170,6 +170,26 @@
         top: 10px;
         right: 10px;
     }
+    .open-bills-list .custom-btn-fill a {
+        padding: 6px 16px !important;
+    }
+    .paid-bills-list .custom-list-item {
+        display: block;
+    }
+    .paid-bills-name-date {
+        flex-direction: column-reverse;
+    }
+    #bills-tab-content .paid-bills-name-date .custom-tab-list-issue-date p{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+    .paid-bills-list .custom-tab-list-view-detail-btn a {
+        border: none;
+        padding: 0;
+        color: var(--primary-color);
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {
     .current-contracts-block .padding-20,

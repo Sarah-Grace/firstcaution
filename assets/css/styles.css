@@ -240,7 +240,7 @@ main {
 }
 .site-main-section {
     background-color: var(--color-bg-1);
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 103px);
 }
 .my-contracts-block {
     background-color: var(--secondary-color);
@@ -1566,3 +1566,144 @@ input[type=range]::-webkit-slider-thumb {
 .firtees-cards-section-scrollable::-webkit-scrollbar {
     width: 0px;
 }  
+/* chatbot */
+.start-new-conversation-top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 18px 0;
+}
+.conversation-card {
+    border: 1px solid #E6EFF5;
+    padding: 24px;
+    height: calc(100vh - 220px);
+    overflow: auto;
+}
+.conversation-list-item {
+    display: flex;
+    gap: 11px;
+}
+.conversation-profile {
+    position: relative;
+}
+.conversation-profile img {
+    width: 46px;
+    height: 46px;
+}
+.user-active-status {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #10C157;
+    display: block;
+}
+.user-away-status {
+    background: #C4CAE8;
+}
+.conversation-title-message {
+    flex: 1 1 auto;
+}
+.conversation-title h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+.conversation-message p,
+.conversation-time p {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--grey-color-1);
+}
+.conversation-message p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.conversation-title-message,
+.time-and-unread-messate {
+    margin-top: 7px;
+}
+.time-and-unread-messate {
+    width: 60px;
+    flex: 0 0 auto;
+}
+.conversation-list-item {
+    border-bottom: 1px solid #E6EFF5;
+    margin-top: 12px;
+}
+.conversation-list-item:last-child {
+    border-bottom: none;
+}
+.new-message-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-message-block {
+    text-align: center;
+} 
+.new-message-block .new-message-icon {
+    margin-bottom: 26px;
+}
+.new-message-block h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--heading-color-1);
+    margin-bottom: 10px;
+}
+.new-message-block p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--grey-color-1);
+    margin-bottom: 41px;
+}
+.conversation-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.conversation-list-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--heading-color-1);
+    margin-bottom: 0;
+}
+.conversation-list-title p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #A6A8B1;
+    margin-bottom: 0;
+}
+.search-conversation .input-group {
+    padding: 0 16px;
+}
+.search-conversation .input-group-text,
+.search-conversation input {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #ABAFB1;
+}
+.search-conversation input::placeholder {
+    color: #ABAFB1;
+}
+.search-conversation input {
+    padding-left: 16px;
+}
+.search-conversation input:focus-visible {
+    outline: none;
+}
+.search-conversation input:focus {
+    box-shadow: none;
+}

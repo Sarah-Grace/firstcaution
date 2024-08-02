@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/query.css">
-  <title>Firstcaution</title>
-</head>
-<body>
-  <aside class="site-sidebar">
-    <div class="site-sidebar-inner-wrapper">
-      <a href="home.html" class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo">
-        <img src="assets/images/logos/logo.png" alt="logo">
-      </a>
-    </div>
-  </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/query.css" />
+    <title>Firstcaution</title>
+  </head>
+  <body>
+    <aside class="site-sidebar">
+      <div class="site-sidebar-inner-wrapper">
+        <a
+          href="home.html"
+          class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo"
+        >
+          <img src="assets/images/logos/logo.png" alt="logo" />
+        </a>
+      </div>
+    </aside>
 
-  <main>
-    <div class="site-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="login-page-header"></div>
+    <main>
+      <div class="site-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="login-page-header"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="site-main-section page-login">
-      <div class="container-fluid">
-        <div class="row">
+      <div class="site-main-section page-login">
+        <div class="container-fluid">
+          <div class="row">
             <div class="col-12">
-                <div class="login-register-block-wrapper">
-                    <!-- Login Modal -->
-                    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="login-register-block-logo">
-                                        <img src="assets/images/logos/logo.png" alt="">
-                                    </div>
-
-                                    <h2>Welcome Back</h2>
-                                    <h4>Log In to your account</h4>
-                                    <form action="">
-                                        <div class="input-group mb-4">
-                                            <span class="input-group-text" id="email-address-addon"><img src="assets/images/icons/email-icon.png" alt=""></span>
-                                            <input type="text" class="form-control ps-0" placeholder="Email Address" aria-label="emailAddress" aria-describedby="email-address-addon">
-                                        </div>
-                                        <div class="input-group mb-2">
-                                            <span class="input-group-text" id="password-addon"><img src="assets/images/icons/password.png" alt=""></span>
-                                            <input type="password" id="myPassword" class="myPassword form-control ps-0" placeholder="Password" aria-label="password" aria-describedby="password-addon">
-                                            <span class="input-group-text">
-                                                <i class="custom-eye-icon togglePassword"></i>
-                                            </span>
-                                        </div>
-                                        <div class="reset-password">
-                                            <a href="">Recover Password</a>
-                                        </div>
-                                        <div class="login-register-option-in-form mt-5 bm-5">
-                                            <h4>Don't have an account? <a href="register.html">Sign Up</a></h4>
-                                        </div>
-                                        <div class="custom-btn-fill mt-4 pt-2">
-                                            <a href="home.html">Log In</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+              <div class="login-register-block-wrapper">
+                <!-- Login Modal -->
+                <div
+                  class="modal fade"
+                  id="login"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="login-register-block-logo">
+                          <img src="assets/images/logos/logo.png" alt="" />
                         </div>
+
+                        <h2>Welcome Back</h2>
+                        <h4>Log In to your account</h4>
+                        <form action="">
+                          <div class="input-group mb-4">
+                            <span
+                              class="input-group-text"
+                              id="email-address-addon"
+                              ><img
+                                src="assets/images/icons/email-icon.png"
+                                alt=""
+                            /></span>
+                            <input
+                              type="text"
+                              class="form-control ps-0"
+                              placeholder="Email Address"
+                              aria-label="emailAddress"
+                              aria-describedby="email-address-addon"
+                            />
+                          </div>
+                          <div class="input-group mb-2">
+                            <span class="input-group-text" id="password-addon"
+                              ><img
+                                src="assets/images/icons/password.png"
+                                alt=""
+                            /></span>
+                            <input
+                              type="password"
+                              id="myPassword"
+                              class="myPassword form-control ps-0"
+                              placeholder="Password"
+                              aria-label="password"
+                              aria-describedby="password-addon"
+                            />
+                            <span class="input-group-text">
+                              <i class="custom-eye-icon togglePassword"></i>
+                            </span>
+                          </div>
+                          <div class="reset-password">
+                            <a href="">Recover Password</a>
+                          </div>
+                          <div class="login-register-option-in-form mt-5 bm-5">
+                            <h4>
+                              Don't have an account?
+                              <a href="register.html">Sign Up</a>
+                            </h4>
+                          </div>
+                          <div class="custom-btn-fill mt-4 pt-2">
+                            <a href="home.html">Log In</a>
+                          </div>
+                        </form>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <!-- scripts -->
-  <script src="assets/js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script>
-    $( document ).ready(function() {
-      $('#login').modal('show');
-    });
-  </script>
-</body>
+    </main>
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#login").modal("show");
+      });
+    </script>
+  </body>
 </html>

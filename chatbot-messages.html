@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/query.css" />
+    <title>Firstcaution</title>
+  </head>
+  <body>
+    <aside class="site-sidebar">
+      <div class="site-sidebar-inner-wrapper">
+        <a
+          href="home.html"
+          class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo"
+        >
+          <img src="assets/images/logos/logo.png" alt="logo" />
+        </a>
+        <div class="sidebar-menu-wrapper">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a
+                href="home.html"
+                class="nav-link link-body-emphasis"
+                aria-current="page"
+              >
+                <img src="assets/images/icons/home.svg" alt="" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="contracts.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-contracts.svg" alt="" />
+                <span>My Contracts</span>
+              </a>
+            </li>
+            <li>
+              <a href="bills.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-bills.svg" alt="" />
+                <span>My Bills</span>
+              </a>
+            </li>
+            <li>
+              <a href="deposit.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-deposit.svg" alt="" />
+                <span>My Deposit</span>
+              </a>
+            </li>
+            <li>
+              <a href="firstees.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/firstees.svg" alt="" />
+                <span>Firstees</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatbot.html" class="nav-link active">
+                <img src="assets/images/icons/chatbot.svg" alt="" />
+                <span>Chatbot</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column">
+            <li class="mob-profile">
+              <a href="#" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/user-profile.png" alt="" />
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/settings.svg" alt="" />
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/logout.svg" alt="" />
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="site-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="site-header-inner-wrapper">
+                <div class="mob-header-logo">
+                  <a href="home.html" class="mob-site-sidebar-logo">
+                    <img src="assets/images/logos/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div class="page-title">
+                  <h1>Chatbot</h1>
+                </div>
+                <div class="header-cta-wrapper">
+                  <div class="header-search-field">
+                    <form class="" role="search">
+                      <span class="search-icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></span>
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search..."
+                        aria-label="Search"
+                      />
+                    </form>
+                  </div>
+                  <div class="header-settings">
+                    <img src="assets/images/icons/settings-1.svg" alt="" />
+                  </div>
+                  <div class="header-notifications">
+                    <img src="assets/images/icons/notifications.svg" alt="" />
+                  </div>
+                  <div class="header-profile">
+                    <img src="assets/images/icons/user-profile.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-main-section">
+        <div class="container-fluid">
+          <div class="row pb-4">
+            <div class="col-12">
+              <div class="start-new-conversation-top-block">
+                <h2 class="mb-0">Start a new converstaion</h2>
+                <div class="btn-new-message custom-btn-fill text-end">
+                  <button type="button">New Message</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card conversation-card">
+                <div class="conversation-list-wrapper">
+                  <div class="conversation-list-title">
+                    <h3>Chat</h3>
+                    <p>06</p>
+                  </div>
+                  <div class="search-conversation">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="search-conversation"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Search" aria-describedby="search-conversation">
+                    </div>
+                  </div>
+                  <div class="conversation-list">
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-1.png"
+                          alt=""
+                        />
+                        <div class="user-active-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-2.png"
+                          alt=""
+                        />
+                        <div class="user-active-status user-away-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-3.png"
+                          alt=""
+                        />
+                        <div class="user-active-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-4.png"
+                          alt=""
+                        />
+                        <div class="user-active-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-5.png"
+                          alt=""
+                        />
+                        <div class="user-active-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                    <div class="conversation-list-item">
+                      <div class="conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-6.png"
+                          alt=""
+                        />
+                        <div class="user-active-status user-away-status"></div>
+                      </div>
+                      <div class="conversation-title-message">
+                        <div class="conversation-title">
+                          <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="conversation-message">
+                          <p>Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                      </div>
+                      <div class="time-and-unread-messate">
+                        <div class="conversation-time">
+                          <p>10:45 PM</p>
+                        </div>
+                        <div class="conversation-unread-message-count"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="card conversation-card">
+                <div class="chat-block-top-bar">
+                    <div class="chat-top-bar-conversation-profile">
+                        <img
+                          src="assets/images/icons/user-profile-1.png"
+                          alt=""
+                        />
+                    </div>
+                    <div class="chat-top-bar-conversation-title-status">
+                        <div class="chat-top-bar-conversation-title">
+                            <h3>Cody Fisher</h3>
+                        </div>
+                        <div class="chat-top-bar-conversation-status">
+                            <p>
+                                <span class="chat-top-bar-user-active-status">Online</span>
+                                <span class="chat-top-bar-user-last-seen">Online - Last seen, 2:02 PM</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chat-top-bar-options">
+                        <div class="chat-top-bar-call-option">
+                            <button> 
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+                        </div>
+                        <div class="chat-top-bar-all-option">
+                            <button> 
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversation-card-messages-area">
+                    <div class="messages-area-date">
+                        <p>Today</p>
+                    </div>
+                    <div class="sent-message-wrapper">
+                        <div class="sent-message">
+                            <p class="message-content">I have sent an invoice to your mail.Please check</p>
+                            <p class="message-time">10:56 AM</p>
+                        </div>
+                    </div>
+                    <div class="received-message-wrapper">
+                        <div class="received-message">
+                            <p class="message-content">Okayy 👍</p>
+                            <p class="message-time">10:56 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-new-message-wrapper">
+                    <div class="type-your-message-block">
+                        <form action="">
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Type your message" aria-label="Search" aria-describedby="search-conversation">
+                            <span class="input-group-text" id="btn-send-message">
+                              <a href="">
+                                <img src="assets/images/icons/send.png" alt="">
+                              </a>
+                            </span>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/query.css" />
+    <title>Firstcaution</title>
+  </head>
+  <body>
+    <aside class="site-sidebar">
+      <div class="site-sidebar-inner-wrapper">
+        <a
+          href="home.html"
+          class="d-flex align-items-center link-body-emphasis text-decoration-none site-sidebar-logo"
+        >
+          <img src="assets/images/logos/logo.png" alt="logo" />
+        </a>
+        <div class="sidebar-menu-wrapper">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a
+                href="home.html"
+                class="nav-link link-body-emphasis"
+                aria-current="page"
+              >
+                <img src="assets/images/icons/home.svg" alt="" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="contracts.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-contracts.svg" alt="" />
+                <span>My Contracts</span>
+              </a>
+            </li>
+            <li>
+              <a href="bills.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-bills.svg" alt="" />
+                <span>My Bills</span>
+              </a>
+            </li>
+            <li>
+              <a href="deposit.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/my-deposit.svg" alt="" />
+                <span>My Deposit</span>
+              </a>
+            </li>
+            <li>
+              <a href="firstees.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/firstees.svg" alt="" />
+                <span>Firstees</span>
+              </a>
+            </li>
+            <li>
+              <a href="firstmoove.html" class="nav-link active">
+                <img src="assets/images/icons/firstmoove.svg" alt="" />
+                <span>Firstmoove</span>
+              </a>
+            </li>
+            <li>
+              <a href="chatbot.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/chatbot.svg" alt="" />
+                <span>Chatbot</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column">
+            <li class="mob-profile">
+              <a href="#" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/user-profile.png" alt="" />
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/settings.svg" alt="" />
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-body-emphasis">
+                <img src="assets/images/icons/logout.svg" alt="" />
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="site-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="site-header-inner-wrapper">
+                <div class="mob-header-logo">
+                  <a href="home.html" class="mob-site-sidebar-logo">
+                    <img src="assets/images/logos/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div class="page-title">
+                  <h1>Firstmoove</h1>
+                </div>
+                <div class="header-cta-wrapper">
+                  <div class="header-search-field">
+                    <form class="" role="search">
+                      <span class="search-icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                      ></span>
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search..."
+                        aria-label="Search"
+                      />
+                    </form>
+                  </div>
+                  <div class="header-settings">
+                    <img src="assets/images/icons/settings-1.svg" alt="" />
+                  </div>
+                  <div class="header-notifications">
+                    <img src="assets/images/icons/notifications.svg" alt="" />
+                  </div>
+                  <div class="header-profile">
+                    <img src="assets/images/icons/user-profile.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-main-section firstmoove-page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="tabs-card-wrapper">
+                <div class="card tabs-card">
+                  <ul
+                    class="nav nav-tabs custom-nav-tabs"
+                    id="bills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="access-documents-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#access-documents"
+                        type="button"
+                        role="tab"
+                        aria-controls="access-documents"
+                        aria-selected="true"
+                      >
+                      Access My Documents
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="notify-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#notify"
+                        type="button"
+                        role="tab"
+                        aria-controls="notify"
+                        aria-selected="false"
+                      >
+                      Notify Population Office
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="bills-tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="access-documents"
+                      role="tabpanel"
+                      aria-labelledby="access-documents-tab"
+                    >
+                      <div class="accordion custom-accordion" id="access-document-accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <span
+                                ><img
+                                  src="assets/images/icons/id.png"
+                                  alt=""
+                              /></span>
+                              ID
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#access-document-accordion"
+                          >
+                            <div class="accordion-body">
+                              ............................................
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <span>
+                                <img
+                                  src="assets/images/icons/passport.png"
+                                  alt=""
+                                />
+                              </span>
+                              Passport
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#access-document-accordion"
+                          >
+                            <div class="accordion-body">
+                              .................................................
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              <span
+                                ><img
+                                  src="assets/images/icons/debt.png"
+                                  alt=""
+                              /></span>
+                              Debt Enforcement Certificate
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#access-document-accordion"
+                          >
+                            <div class="accordion-body">
+                                .....................................
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                            >
+                              <span
+                                ><img
+                                  src="assets/images/icons/guarantee-certificate.png"
+                                  alt=""
+                              /></span>
+                              Guarantee Certificate
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#access-document-accordion"
+                          >
+                            <div class="accordion-body">
+                                .....................................
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="notify"
+                      role="tabpanel"
+                      aria-labelledby="notify-tab"
+                    >
+                    <div class="notify-population-office-tab-inner-wrap">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-12 col-md-6">
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Current Address</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value="3617-A Nyon, Switzerland"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >New Address</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    value=""
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Notification</label
+                                  >
+                                  <div class="form-check form-switch">
+                                    <input class="form-check-input"  type="checkbox" role="switch" name="notificationRadio" id="notificationRadio" >
+                                    <label class="form-check-label" for="notificationRadio">
+                                      Enable notification for change of address
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-6 align-self-end">
+                                <div class="custom-btn-fill text-end">
+                                  <button type="submit">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

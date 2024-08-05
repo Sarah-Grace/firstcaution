@@ -1003,34 +1003,34 @@ main {
     font-size: 15px;
     color: #909090;
 }
-#payment-method-accordion.accordion {
+.custom-accordion.accordion {
     display: flex;
     gap: 24px;
 }
-#payment-method-accordion.accordion .accordion-item {
+.custom-accordion.accordion .accordion-item {
     flex: 1 1 33.33%;
     border: none;
  }
-#payment-method-accordion .accordion-header {
+.custom-accordion .accordion-header {
     border-radius: 8px;
 }
 
-#payment-method-accordion .accordion-header + .accordion-collapse.show {
+.custom-accordion .accordion-header + .accordion-collapse.show {
     border: 1px solid #DFEAF2;
     border-top: none;
     background-color: var(--color-bg-3);
 }
-#payment-method-accordion .accordion-button {
+.custom-accordion .accordion-button {
     border: 1px solid #DFEAF2;
     background-color: var(--color-bg-3);
 }
-#payment-method-accordion .accordion-button:not(.collapsed) {
+.custom-accordion .accordion-button:not(.collapsed) {
     box-shadow: none;
     border-bottom: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-#payment-method-accordion .accordion-button {
+.custom-accordion .accordion-button {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 500;
@@ -1043,7 +1043,7 @@ main {
 .accordion-body {
     padding-bottom: 46px;
 }
-#payment-method-accordion .accordion-button span {
+.custom-accordion .accordion-button span {
     padding-right: 12px;
 }
 .apple-pay-setting-up {
@@ -1737,7 +1737,7 @@ input[type=range]::-webkit-slider-thumb {
     background-color: #F9F9F9;
     padding: 0 0 0 18px;
     line-height: 48px;
-    margin-bottom: 30px !important;
+    margin-bottom: 0!important;
 }
 .type-your-message-block {
     position: absolute;
@@ -1894,3 +1894,76 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 12px;
     color: #909090;
 }
+.input-new-message-block {
+    margin-bottom: 30px;
+}
+.input-new-message-block a {
+    display: block;
+    line-height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    text-decoration: none;
+    font-size: 26px;
+    color: var(--text-color);
+    text-align: center;
+}
+.input-new-message-block input {
+    padding-right: 5px;
+}
+.input-new-message-block input:focus {
+    background-color: transparent;
+}
+.search-conversation .input-group {
+    border-radius: 8px;
+    border: 1px solid #CFD3D4;
+}
+#newMessageModal .form-control {
+    line-height: 45px;
+}
+#newMessageModal .time-and-unread-messate {
+    width: auto;
+}
+.conversation-title h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+#newMessageModal .search-conversation {
+    margin-bottom: 40px;
+}
+#newMessageModal .search-conversation p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #8B8D97;
+    margin-bottom: 28px;
+}
+#newMessageModal.custom-modal .modal-body {
+    padding: 28px 24px 70px 24px;
+}
+.chat-back-arrow a {
+    color: var(--heading-color-1);
+}
+/* firstmoove */
+#notificationRadio.form-check-input:checked {
+    background-color: #16DBCC;
+    border-color: #16DBCC;
+}
+#notificationRadio.form-check-input:focus {
+    box-shadow: none;
+}
+#notificationRadio.form-check-input {
+    border-color: #16DBCC;
+    background-color: #fff;
+    --bs-form-switch-bg: url(../images/icons/green-circle.svg);
+}
+/* #notificationRadio.form-check-input {
+    --bs-form-switch-bg: url(../images/icons/green-circle.svg);
+} */
+#notificationRadio.form-check-input:checked {
+    background-image: url(../images/icons/white-circle.svg) !important;
+}
+
+

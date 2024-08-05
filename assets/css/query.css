@@ -22,6 +22,11 @@
         flex: 1 1 auto;
     }
 }
+@media screen and (max-width: 1440px) {
+    #access-document-accordion.accordion {
+        flex-wrap: wrap;
+    }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
     .granted-amount-text {
         font-size: 22px;
@@ -41,11 +46,11 @@
     }
 }
 @media only screen and (max-width: 1199px) {
-    #payment-method-accordion.accordion {
+    .custom-accordion.accordion {
         flex-wrap: wrap;
         gap: 20px;
     }
-    #payment-method-accordion.accordion .accordion-item {
+    .custom-accordion.accordion .accordion-item {
         flex: 0 0 48%;
     }
     .adjust-detail-card .max-width-418 {
@@ -55,6 +60,11 @@
     .filters-section-inner-wrapper {
         flex-wrap: wrap;
         gap: 5px;
+    }
+    .conversation-card-messages-block {
+        position: absolute;
+        top: 20px;
+        display: none;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -130,11 +140,11 @@
     .granted-amount-text {
         font-size: 28px;
     }
-    #payment-method-accordion.accordion {
+    .custom-accordion.accordion {
         flex-wrap: wrap;
         gap: 20px;
     }
-    #payment-method-accordion.accordion .accordion-item {
+    .custom-accordion.accordion .accordion-item {
         flex: 0 0 100%;
     }
     .contracts-page .custom-tab-list-issue-date-wrapper, 
@@ -189,6 +199,15 @@
         border: none;
         padding: 0;
         color: var(--primary-color);
+    }
+    .start-new-conversation-top-block {
+        flex-wrap: wrap;
+    }
+    .start-new-conversation-top-block h2 {
+        font-size: 16px;
+    }
+    .start-new-conversation-top-block .custom-btn-fill button {
+        padding: 16px !important;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {

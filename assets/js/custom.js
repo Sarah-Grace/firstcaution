@@ -35,4 +35,16 @@ $(document).ready(function() {
     if ($(window).width() < 767) {
     $(".custom-tab-list-view-detail-btn a").html("View");
     }
+    $(".conversation-list-item").click(function(event){
+        if ($(window).width() < 1400) {
+            $ (".conversation-list-block").hide();
+            $(".conversation-card-messages-block").show();
+            console.log("abc")
+        }
+    });
+    $(".chat-back-arrow .back-arrow").click(function(event) {
+        $(".conversation-card-messages-block").hide();
+        $ (".conversation-list-block").show();
+    })
+
 });

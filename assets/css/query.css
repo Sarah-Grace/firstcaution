@@ -107,6 +107,9 @@
         width: 52px;
         height: 52px;
     }
+    .conversation-card .custom-btn-fill.btn-send-email button {
+        padding: 16px !important;
+    }
 }
 @media only screen and (max-width: 767px) {
     .site-header, .site-main-section {
@@ -208,6 +211,9 @@
     }
     .start-new-conversation-top-block .custom-btn-fill button {
         padding: 16px !important;
+    }
+    .responsive-height-auto {
+        height:auto;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {

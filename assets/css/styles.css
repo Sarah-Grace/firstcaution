@@ -1303,30 +1303,25 @@ main {
     padding-bottom: 40px;
 }
 /* deposit detail page */
-.deposit-detail-list {
-    background-color: var(--color-bg-3);
-    padding: 21px 23px;
-    border: 1px solid #DFEAF2;
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
 .deposit-detail-list .custom-detail-list-item {
-    padding: 6px 18px;
-    background-color: white;
+    padding: 13px 18px;
     border: none;
+    align-items: center;
+    margin-bottom: 8px;
 }
 .deposit-detail-list .custom-list-detail-item-title {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.deposit-detail-list .custom-list-detail-item-title h3,
-.deposit-detail-list .custom-list-detail-item-info h3{
+.deposit-detail-list .custom-list-detail-item-title h3 {
     font-size: 15px;
     font-weight: 400;
 }
 .deposit-detail-list .custom-list-detail-item-info h3{
     color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
 }
 .deposit-detail-list .custom-list-detail-item-info {
     display: flex;
@@ -1965,5 +1960,44 @@ input[type=range]::-webkit-slider-thumb {
 #notificationRadio.form-check-input:checked {
     background-image: url(../images/icons/white-circle.svg) !important;
 }
-
-
+/* fixes */
+.deposit-page .back-btn-block {
+    margin-bottom: 43px;
+}
+#access-document-accordion.custom-accordion.accordion {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+#access-document-accordion.custom-accordion.accordion .accordion-item {
+    flex: 0 1 283px;
+}
+#debt-enforcement-certificate-button-wrapper.custom-detail-list {
+    max-width: 510px;
+}
+#debt-enforcement-certificate-button-wrapper.custom-detail-list .custom-detail-list-item {
+    padding: 6px 26px;
+}
+#debt-enforcement-certificate-button-wrapper.custom-detail-list .custom-list-detail-item-title{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.access-documents-tab-sub-heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--heading-color-1);
+    margin-bottom: 14px;
+}
+#access-document-accordion .accordion-button {
+    padding: 12px 20px;
+}
+#debt-enforcement-certificate-button-wrapper .custom-tab-list-btn a {
+    border: 1px solid #3876DA;
+    color: #3876DA;
+    padding: 0 44px;
+    border-radius: 8px;
+    line-height: 35px;
+    display: block;
+    text-decoration: none;
+}

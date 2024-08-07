@@ -302,6 +302,9 @@
     .custom-nav-tabs .nav-link {
         padding: 0 10px 10px 10px;
     }
+    #debt-enforcement-certificate-button-wrapper .custom-tab-list-btn a {
+        padding: 0 4px;
+    }
 }
 @media only screen and (max-width: 475px) {
     .custom-list-select select {
@@ -352,6 +355,15 @@
     }
     .contracts-page .custom-tab-list-view-detail-btn a {
         font-size: 12px;
+    }
+    #access-document-accordion .accordion-button {
+        padding: 12px 4px;
+    }
+    #debt-enforcement-certificate-button-wrapper.custom-detail-list .custom-detail-list-item {
+        padding: 12px 4px;
+    }
+    #debt-enforcement-certificate-button-wrapper.custom-detail-list .custom-list-detail-item-title {
+        gap: 4px;
     }
 }
 @media only screen and (max-height: 620px) {

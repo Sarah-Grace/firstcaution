@@ -80,6 +80,15 @@ p {
 .bg-gray-1 {
     background-color: var(--color-bg-2);
 }
+.bg-blue-gradient {
+    background: linear-gradient(92.54deg, #2EB3E2 -11.07%, #7AD5F6 119.27%);
+}
+.bg-green-gradient {
+    background: linear-gradient(92.54deg, #0FBDB2 -11.07%, #62F5EE 119.27%);
+}
+.bg-yellow-gradient {
+    background: linear-gradient(92.54deg, #FFA530 -11.07%, #FFDA9A 119.27%);
+}
 .border-radius-6 {
     border-radius: 6px;
 }
@@ -2000,4 +2009,48 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 35px;
     display: block;
     text-decoration: none;
+}
+#requestModal h3 {
+    color: #8B8D97;
+    font-weight: 500;
+}
+/* First Coin */
+.offers-card {
+    height: 200px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.offers-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 251px;
+}
+.custom-btn-fill-white {
+    text-align: start;
+}
+.custom-btn-fill-white a {
+    background-color: white;
+    color: var(--heading-color-1) !important;
+}
+.offers-card-content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.offers-card-content h3 span {
+    color: var(--heading-color-1);
+}
+.offers-card-content .category {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    background-color: rgba(0, 0, 0, 0.302);
+    padding: 0 5px;
+    display: inline;
+    width: max-content;
+    border-radius: 4px;
 }

@@ -25,6 +25,8 @@ $(document).on('input', '#flexible-amount', function() {
 });
 
 $("#calcPremium").click(function(){
+    $(".annual-premium-list-item").css("background-color", "#D0EDFF");
+    $(".annual-premium-list-item h3").css("color", "#253B6A");
     $(".adjust-detail-transfer-deposit-section").show()
 });
 // scroll down

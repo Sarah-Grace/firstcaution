@@ -2025,7 +2025,7 @@ input[type=range]::-webkit-slider-thumb {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    max-width: 251px;
+    max-width: 273px;
 }
 .custom-btn-fill-white {
     text-align: start;
@@ -2047,9 +2047,9 @@ input[type=range]::-webkit-slider-thumb {
     color: white;
     font-size: 12px;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 17px;
     background-color: rgba(0, 0, 0, 0.302);
-    padding: 0 5px;
+    padding: 0 7px;
     display: inline;
     width: max-content;
     border-radius: 4px;

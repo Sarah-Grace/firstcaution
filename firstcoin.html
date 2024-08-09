@@ -107,7 +107,7 @@
                 </a>
               </div>
               <div class="page-title">
-                <h1>My Deposit</h1>
+                <h1>Firstcoin</h1>
               </div>
               <div class="header-cta-wrapper">
                 <div class="header-search-field">
@@ -131,14 +131,59 @@
         </div>
       </div>
     </div>
-    <div class="site-main-section pay-bill-page deposit-page">
+    <div class="site-main-section firstcoin-page">
       <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="card custom-detail-card">
                     <div class="row">
-                        <div class="col-6 mb-4">
-                            <div class="offers-card bg-blue-gradient">
+                        <div class="col-xxl-6 mb-4">
+                            <div class="offers-card my-firstcoins-card">
+                                <div class="offers-card-content">
+                                    <div class="my-firstcoins-heading">
+                                        <h3>My Firstcoins</h3>
+                                    </div>
+                                    <div class="my-firstcoins-amount">
+                                        <h2>CHF 150.00</h2>
+                                    </div>
+                                    <div class="save-on-next-invoice">
+                                        <div class="save-on-next-invoice-icon">
+                                            <img src="assets/images/icons/leaf-rounded.png" alt="">
+                                        </div>
+                                        <p>Saved on next Invoice: -CHF 1</p>
+                                    </div>
+                                </div>
+                                <div class="banner-image">
+                                    <img src="assets/images/hand-with-money.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 mb-4">
+                            <div class="offers-card invite-card">
+                                <div class="offers-card-content">
+                                    <div class="invite-card-heading">
+                                        Invite Friends
+                                    </div>
+                                    <h3>You get <span>50 Coins</span> per sponsored clients</h3>
+                                    <div class="custom-btn-fill text-start">
+                                        <a href="javascript:void(0);"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#inviteFriendsModal">Invite</a>
+                                    </div>
+                                </div>
+                                <div class="banner-image">
+                                    <img src="assets/images/invite.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="divider">
+                                <hr>
+                            </div>
+                            <h2 class="mt-4">Partners Offer</h2>
+                        </div>
+                        <div class="col-xxl-6 mb-4">
+                            <div class="offers-card bg-blue-gradient d-flex">
                                 <div class="offers-card-content">
                                     <div class="category">
                                         Furniture
@@ -148,9 +193,12 @@
                                         <a href="">View</a>
                                     </div>
                                 </div>
+                                <div class="banner-image">
+                                    <img src="assets/images/furniture.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 mb-4">
+                        <div class="col-xxl-6 mb-4">
                             <div class="offers-card bg-green-gradient">
                                 <div class="offers-card-content">
                                     <div class="category">
@@ -161,9 +209,12 @@
                                         <a href="">View</a>
                                     </div>
                                 </div>
+                                <div class="banner-image">
+                                    <img src="assets/images/insurance-banner.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 mb-4">
+                        <div class="col-xxl-6 mb-4">
                             <div class="offers-card bg-yellow-gradient">
                                 <div class="offers-card-content">
                                     <div class="category">
@@ -174,6 +225,9 @@
                                         <a href="">View</a>
                                     </div>
                                 </div>
+                                <div class="banner-image">
+                                    <img src="assets/images/moving-services.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -183,6 +237,63 @@
       </div>
     </div>
   </main>
+      <!-- Invite friends Modal -->
+      <div
+      class="modal fade custom-modal"
+      id="inviteFriendsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="inviteFriendsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="inviteFriendsModalLabel"
+            >
+            Invite Friends
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+                <ul class="custom-list-icon-text">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="custom-list-icon">
+                                <img src="assets/images/icons/sms-icon.png" alt="">
+                            </span>
+                            <span class="custom-list-text">Invite friends via SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="custom-list-icon">
+                                <img src="assets/images/icons/mail.png" alt="">
+                            </span>
+                            <span class="custom-list-text">Invite friends via Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="custom-list-icon">
+                                <img src="assets/images/icons/whatsapp-icon.png" alt="">
+                            </span>
+                            <span class="custom-list-text">Invite friends via Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- scripts -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>

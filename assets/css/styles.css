@@ -2018,7 +2018,10 @@ input[type=range]::-webkit-slider-thumb {
 .offers-card {
     height: 200px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 .offers-card-content {
     display: flex;
@@ -2026,6 +2029,7 @@ input[type=range]::-webkit-slider-thumb {
     justify-content: space-between;
     height: 100%;
     max-width: 273px;
+    padding: 20px 0;
 }
 .custom-btn-fill-white {
     text-align: start;
@@ -2039,6 +2043,7 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    margin-bottom: 0;
 }
 .offers-card-content h3 span {
     color: var(--heading-color-1);
@@ -2053,4 +2058,135 @@ input[type=range]::-webkit-slider-thumb {
     display: inline;
     width: max-content;
     border-radius: 4px;
+}
+.firstcoin-page h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; 
+    color: var(--heading-color-1);
+    margin-bottom: 26px;
+}
+.banner-image {
+    padding-right: 20px;
+}
+.my-firstcoins-card {
+    background-color: var(--primary-color);
+    padding: 31px 0;
+    border-radius: 5px;
+}
+.my-firstcoins-card .offers-card-content {
+    padding: 0 0 0 37px;
+    max-width: 340px;
+}
+.my-firstcoins-heading h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color:white;
+    margin-bottom: 0;
+}
+.my-firstcoins-amount h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color:white;
+    margin-bottom: 0;
+}
+.my-firstcoins-amount h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color:white;
+    margin-bottom: 0;
+}
+.save-on-next-invoice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.save-on-next-invoice-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    text-align: center;
+}
+.save-on-next-invoice-icon img{
+    width: 18px;
+    height: 18px;
+    line-height: 30px;
+}
+.save-on-next-invoice p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    color:white;
+    margin-bottom: 0;
+}
+.my-firstcoins-card .banner-image {
+    padding-right: 0;
+} 
+.invite-card {
+    padding: 29px 37px;
+    background-color: #D3E9FF;
+    align-items: center;
+}
+.invite-card-heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: var(--heading-color-1);
+}
+.invite-card h3 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--heading-color-1); 
+}
+.invite-card h3 span {
+    font-weight: 600; 
+}
+.invite-card .offers-card-content {
+    padding: 0;
+}
+.invite-card .banner-image img {
+    padding-right: 0;
+}
+.invite-card .offers-card-content {
+    max-width: 225px;
+}
+.custom-list-icon-text {
+    list-style: none;
+    padding: 0;
+}
+.custom-list-icon-text li a {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.custom-list-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF4FF;
+    border-radius: 4px;
+}
+.custom-list-icon img {
+    width: 20px;
+}
+.firstcoin-page .divider {
+    border: none;
+    margin-bottom: 34px;
+}
+.firstcoin-page .divider hr {
+    background-color: #E6EFF5;
 }

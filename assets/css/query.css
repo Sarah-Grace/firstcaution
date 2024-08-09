@@ -306,6 +306,23 @@
         padding: 0 4px;
     }
 }
+@media screen and (min-width: 476px) and (max-width: 575px) {
+    .firstcoin-page .banner-image {
+        padding: 0;
+    }
+    .firstcoin-page .banner-image img {
+        width: 100px;
+    }
+    .my-firstcoins-card .offers-card-content {
+        padding: 0 0 0 20px;
+    }
+    .my-firstcoins-card {
+        padding: 10px 0;
+    }
+    .invite-card {
+        padding: 17px 20px;
+    }
+}
 @media only screen and (max-width: 475px) {
     .custom-list-select select {
         padding: 0 10px;
@@ -364,6 +381,39 @@
     }
     #debt-enforcement-certificate-button-wrapper.custom-detail-list .custom-list-detail-item-title {
         gap: 4px;
+    }
+    .firstcoin-page .banner-image {
+        display: none;
+    }
+    .offers-card-content,
+    .my-firstcoins-card .offers-card-content,
+    .invite-card .offers-card-content {
+        max-width: 100%;
+    }
+    .my-firstcoins-card .offers-card-content {
+        padding: 0 10px;
+    } 
+    .my-firstcoins-card {
+        padding: 20px 0;
+        min-height: 100px;
+        height: auto;
+    }
+    .my-firstcoins-amount h2 {
+        font-size: 28px;
+    }
+    .invite-card {
+        padding: 20px;
+        height: auto;
+       
+    }
+    .offers-card {
+        height: auto;
+    }
+    .offers-card-content {
+        gap: 15px;
+    }
+    .my-firstcoins-card .offers-card-content {
+        gap: 6px;
     }
 }
 @media only screen and (max-height: 620px) {

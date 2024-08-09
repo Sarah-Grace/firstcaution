@@ -9,6 +9,8 @@
     --heading-color-1: #253B6A;
     --text-color: #263B67;
     --font-family-inter: "Inter", sans-serif;
+
+    --font-20px: 20px;
 }
 body {
     font-family: "Inter", sans-serif !important;
@@ -2189,4 +2191,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .firstcoin-page .divider hr {
     background-color: #E6EFF5;
+}
+.firstcoin-page .custom-detail-card {
+    padding: 52px 46px 62px 46px;
 }

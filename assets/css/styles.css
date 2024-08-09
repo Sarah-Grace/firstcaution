@@ -10,32 +10,40 @@
     --text-color: #263B67;
     --font-family-inter: "Inter", sans-serif;
 
+    --font-28px: 28px; 
     --font-20px: 20px;
+    --font-18px: 18px;
+    --font-16px: 16px;
+    --font-15px: 15px;
+    --font-14px: 14px;
+    --font-13px: 13px;
+    --font-12px: 12px;
+    --font-10px: 10px;
 }
 body {
     font-family: "Inter", sans-serif !important;
 }
 h1 {
-    font-size: 28px;
+    font-size: var(--font-28px);
     font-weight: 600;
 }
 h2 {
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 600;
     line-height: 25px;
 }
 h3 {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 600;
     line-height: 20px;
 }
 h4 {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
     line-height: 17px; 
 }
 p {
-    font-size: 10px;
+    font-size: var(--font-10px);
     font-weight: 500;
     line-height: 12px;
 }
@@ -43,7 +51,7 @@ p {
     border-radius: 8px !important;
     background-color: var(--secondary-color);
     color: white !important;
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     line-height: 18px !important;
     padding: 16px 60px !important;
@@ -55,7 +63,7 @@ p {
     border-radius: 8px !important;
     background-color: var(--secondary-color);
     color: white !important;
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     line-height: 18px !important;
     padding: 16px 65px !important;
@@ -68,13 +76,13 @@ p {
 }
 .link-btn {
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-16px);
     line-height: 24px;
     color: white; 
     text-decoration: none;
 }
 .btn-arrow {
-    font-size: 14px;
+    font-size: var(--font-14px);
 }
 .bg-white {
     background-color: white;
@@ -223,7 +231,7 @@ main {
     position: absolute;
     top: 50%;
     left: 25px;
-    font-size: 20px;
+    font-size: var(--font-20px);
     transform: translateY(-50%);
 }
 .header-settings,
@@ -274,7 +282,7 @@ main {
     align-items: flex-start;
 }
 .user-location-block h3 {
-    font-size: 13px;
+    font-size: var(--font-13px);
     font-weight: 500;
     line-height: 13px;
     color: var(--heading-color-1);
@@ -285,7 +293,7 @@ main {
     color: var(--heading-color-1);
 }
 .user-location-block p {
-    font-size: 10px;
+    font-size: var(--font-10px);
     font-weight: 400;
     line-height: 10px;
     color: var(--grey-color-1);
@@ -361,7 +369,7 @@ main {
 .card-content-badge{
     color: var(--grey-color-1);
     background-color: #EEEEEE;
-    font-size: 10px;
+    font-size: var(--font-10px);
     font-weight: 500;
     line-height: 16px;
     border-radius: 4px;
@@ -375,13 +383,13 @@ main {
 }
 .card-content-title h3 {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 700;
     line-height: 30px;
     margin-bottom: 0;
 }
 .card-content-text p {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 400; 
     margin-bottom: 0;
 }
@@ -397,7 +405,7 @@ main {
 }
 .card-price-badge span {
     background-color: white;
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
     line-height: 21px;
     border-radius: 4px;
@@ -424,7 +432,7 @@ main {
     background-color: rgba(255, 255, 255, 0.30);
     border-radius: 4px;
     line-height: 21px;
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 500;
     position: absolute;
     left: 8px;
@@ -586,7 +594,7 @@ main {
     color: var(--grey-color-1);
 }
 .messages-time p {
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 500;
     line-height: 13px;
     margin-bottom: 0;
@@ -643,20 +651,20 @@ main {
     border-bottom: none;
 }
 .custom-tab-list-item-title-name h4 {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 600;
     line-height: 19px;
     margin-bottom: 0;
 }
 .custom-tab-list-issue-date-title p {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     line-height: 19px;
     color: var(--grey-color-1);
     margin-bottom: 8px;
 }
 .custom-tab-list-issue-date p {
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     line-height: 18px;
     margin-bottom: 0;
@@ -674,7 +682,7 @@ main {
     color: var(--text-color);
 }
 .custom-tab-list-item-title-address h4 {
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     line-height: 18px;
     margin-bottom: 0;
@@ -682,14 +690,14 @@ main {
     color: var(--text-color);
 }
 .custom-tab-list-status-title p {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     line-height: 19px;
     margin-bottom: 4px;
     color: var(--grey-color-1);
 }
 .custom-status p {
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     line-height: 18px;
     position: relative;
@@ -732,7 +740,7 @@ main {
     line-height: 16px;
     padding-left: 0;
     text-align: center;
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 500;
     border-radius: 8px;
     margin-bottom: 0;
@@ -832,7 +840,7 @@ main {
 }
 .document-preview-size {
     background-color: var(--primary-color);
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 600;
     line-height: 15px;
     width: 53px;
@@ -861,7 +869,7 @@ main {
     border-radius: 8px;
     background-color: var(--secondary-color);
     color: white;
-    font-size: 18px;
+    font-size: var(--font-18px);
     font-weight: 500;
     line-height: 22px;
     padding: 16px 65px;
@@ -916,7 +924,7 @@ main {
     margin-top: 80px;
 }
 .or-with-lines p {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 500;
     color: var(--text-color);
     line-height: 19px;
@@ -953,7 +961,7 @@ main {
     max-width: 435px;
  }
  .question-title h3 {
-    font-size: 18px;
+    font-size: var(--font-18px);
     line-height: 22px;
     font-weight: 600;
     color: var(--text-color);
@@ -999,11 +1007,11 @@ main {
     color: white;
     line-height: 30px;
     text-align: center;
-    font-size: 15px;
+    font-size: var(--font-15px);
  }
  .form-label {
     color:var(--heading-color-1);
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     line-height: 20px;
  }
@@ -1011,7 +1019,7 @@ main {
     border: 1px solid #DFEAF2;
     line-height: 50px;
     padding: 0 20px;
-    font-size: 15px;
+    font-size: var(--font-15px);
     color: #909090;
 }
 .custom-accordion.accordion {
@@ -1043,7 +1051,7 @@ main {
 }
 .custom-accordion .accordion-button {
     border-radius: 8px;
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 500;
     color: #909090;
 }
@@ -1065,21 +1073,21 @@ main {
     margin-bottom: 31px;
 }
 .apple-pay-setting-up h3 {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
     line-height: 17px;
     color: var(--text-color);
     margin-bottom: 14px;
 }
 .apple-pay-setting-up p {
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 500;
     line-height: 15px;
     color: var(--grey-color-1);
     max-width: 300px;
 }
 .apple-pay-icon {
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 44px;
     color: var(--text-color);
@@ -1150,15 +1158,15 @@ main {
 .login-register-block-wrapper .reset-password a {
     color: var(--primary-color);
     line-height: 17px;
-    font-size: 14px;
+    font-size: var(--font-14px);
     text-align: end;
     text-decoration: none;
 }
 .login-register-block-wrapper .custom-btn-fill {
-    font-size: 18px;
+    font-size: var(--font-18px);
 }
 .custom-detail-list label{
-    font-size: 18px;
+    font-size: var(--font-18px);
     font-weight: 400;
     margin-bottom: 11px;
 }
@@ -1254,7 +1262,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 500;
     color: var(--text-color);
 }
@@ -1265,7 +1273,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 400;
     color: var(--grey-color-1);
     line-height: 18px;
@@ -1326,12 +1334,12 @@ main {
     gap: 15px;
 }
 .deposit-detail-list .custom-list-detail-item-title h3 {
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 400;
 }
 .deposit-detail-list .custom-list-detail-item-info h3{
     color: var(--text-color);
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 500;
 }
 .deposit-detail-list .custom-list-detail-item-info {
@@ -1402,7 +1410,7 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 50px;
 }
 .adjust-detail-transfer-deposit-section .custom-detail-list label {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     color: var(--heading-color-1);
 }
@@ -1449,7 +1457,7 @@ input[type=range]::-webkit-slider-thumb {
 .filter-search input {
     padding-left: 10px;
     line-height: 43px;
-    font-size: 14px;
+    font-size: var(--font-14px);
 }
 .max-distance-filter {
     max-width: 192px;
@@ -1457,7 +1465,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .filter-select-wrapper span,
 .filter-select-wrapper select {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
 }
 .max-distance-filter span {
@@ -1477,7 +1485,7 @@ input[type=range]::-webkit-slider-thumb {
     box-shadow: none;
 }
 .see-rentals {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 500;
     border: 1px solid #919191;
     color: #919191;
@@ -1564,7 +1572,7 @@ input[type=range]::-webkit-slider-thumb {
     outline: none;
 }
 .text-scroll-down {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
     line-height: 24px;
     color: var(--heading-color-1);
@@ -1614,14 +1622,14 @@ input[type=range]::-webkit-slider-thumb {
     flex: 1 1 auto;
 }
 .conversation-title h3 {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 4px;
 }
 .conversation-message p,
 .conversation-time p {
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 500;
     color: var(--grey-color-1);
 }
@@ -1658,14 +1666,14 @@ input[type=range]::-webkit-slider-thumb {
     margin-bottom: 26px;
 }
 .new-message-block h2 {
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 24px;
     color: var(--heading-color-1);
     margin-bottom: 10px;
 }
 .new-message-block p {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 400;
     line-height: 17px;
     color: var(--grey-color-1);
@@ -1678,14 +1686,14 @@ input[type=range]::-webkit-slider-thumb {
     margin-bottom: 18px;
 }
 .conversation-list-title h3 {
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 24px;
     color: var(--heading-color-1);
     margin-bottom: 0;
 }
 .conversation-list-title p {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 500;
     line-height: 24px;
     color: #A6A8B1;
@@ -1726,7 +1734,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 20px;
 }
 .no-chat-history-block p {
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 400;
     line-height: 17px;
     color: var(--grey-color-1);
@@ -1773,7 +1781,7 @@ input[type=range]::-webkit-slider-thumb {
     padding: 0 0 0 15px;
     display: block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 500;
     color: var(--text-color);
 }
@@ -1815,7 +1823,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-bottom: 4px;
 }
 .chat-top-bar-conversation-status p {
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 400;
     line-height: 20px;
     color: #909090;
@@ -1841,7 +1849,7 @@ input[type=range]::-webkit-slider-thumb {
 .chat-top-bar-options button {
     border: none;
     background-color: transparent;
-    font-size: 20px;
+    font-size: var(--font-20px);
     color: var(--heading-color-1);
 }
 .chat-top-bar-all-option button {
@@ -1860,7 +1868,7 @@ input[type=range]::-webkit-slider-thumb {
     background-color: #F9F9F9;
     padding: 0 12px;
     border-radius: 24px;
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 400;
     color: #909090;
     line-height: 28px;
@@ -1890,14 +1898,14 @@ input[type=range]::-webkit-slider-thumb {
 .sent-message p,
 .received-message p {
     line-height: 24px;
-    font-size: 14px;
+    font-size: var(--font-14px);
     font-weight: 400;
     margin-bottom: 0;
     color: var(--text-color);
 }
 .sent-message-wrapper .message-time,
 .received-message .message-time {
-    font-size: 12px;
+    font-size: var(--font-12px);
     color: #909090;
 }
 .input-new-message-block {
@@ -1940,7 +1948,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-bottom: 40px;
 }
 #newMessageModal .search-conversation p {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 500;
     line-height: 19px;
     color: #8B8D97;
@@ -1994,7 +2002,7 @@ input[type=range]::-webkit-slider-thumb {
     align-items: center;
 }
 .access-documents-tab-sub-heading {
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     line-height: 19px;
     color: var(--heading-color-1);
@@ -2042,7 +2050,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .offers-card-content h3 {
     color: white;
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 0;
@@ -2052,7 +2060,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .offers-card-content .category {
     color: white;
-    font-size: 12px;
+    font-size: var(--font-12px);
     font-weight: 500;
     line-height: 17px;
     background-color: rgba(0, 0, 0, 0.302);
@@ -2062,7 +2070,7 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 4px;
 }
 .firstcoin-page h2 {
-    font-size: 20px;
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 24px; 
     color: var(--heading-color-1);
@@ -2119,7 +2127,7 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 30px;
 }
 .save-on-next-invoice p {
-    font-size: 15px;
+    font-size: var(--font-15px);
     font-weight: 400;
     line-height: 17px;
     color:white;
@@ -2140,7 +2148,7 @@ input[type=range]::-webkit-slider-thumb {
     color: var(--heading-color-1);
 }
 .invite-card h3 {
-    font-size: 13px;
+    font-size: var(--font-13px);
     font-weight: 500;
     line-height: 15px;
     color: var(--heading-color-1); 
@@ -2168,7 +2176,7 @@ input[type=range]::-webkit-slider-thumb {
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
-    font-size: 16px;
+    font-size: var(--font-16px);
     font-weight: 400;
     line-height: 20px;
 }
